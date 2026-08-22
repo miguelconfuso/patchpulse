@@ -40,9 +40,9 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   mod
 ));
 
-// node_modules/.pnpm/react@19.2.8/node_modules/react/cjs/react.production.js
+// node_modules/react/cjs/react.production.js
 var require_react_production = __commonJS({
-  "node_modules/.pnpm/react@19.2.8/node_modules/react/cjs/react.production.js"(exports) {
+  "node_modules/react/cjs/react.production.js"(exports) {
     "use strict";
     var REACT_ELEMENT_TYPE = /* @__PURE__ */ Symbol.for("react.transitional.element");
     var REACT_PORTAL_TYPE = /* @__PURE__ */ Symbol.for("react.portal");
@@ -481,9 +481,9 @@ var require_react_production = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react@19.2.8/node_modules/react/cjs/react.development.js
+// node_modules/react/cjs/react.development.js
 var require_react_development = __commonJS({
-  "node_modules/.pnpm/react@19.2.8/node_modules/react/cjs/react.development.js"(exports, module) {
+  "node_modules/react/cjs/react.development.js"(exports, module) {
     "use strict";
     "production" !== process.env.NODE_ENV && (function() {
       function defineDeprecationWarning(methodName, info) {
@@ -1453,9 +1453,9 @@ var require_react_development = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react@19.2.8/node_modules/react/index.js
+// node_modules/react/index.js
 var require_react = __commonJS({
-  "node_modules/.pnpm/react@19.2.8/node_modules/react/index.js"(exports, module) {
+  "node_modules/react/index.js"(exports, module) {
     "use strict";
     if (process.env.NODE_ENV === "production") {
       module.exports = require_react_production();
@@ -1465,9 +1465,9 @@ var require_react = __commonJS({
   }
 });
 
-// node_modules/.pnpm/signal-exit@3.0.7/node_modules/signal-exit/signals.js
+// node_modules/signal-exit/signals.js
 var require_signals = __commonJS({
-  "node_modules/.pnpm/signal-exit@3.0.7/node_modules/signal-exit/signals.js"(exports, module) {
+  "node_modules/signal-exit/signals.js"(exports, module) {
     "use strict";
     module.exports = [
       "SIGABRT",
@@ -1503,9 +1503,9 @@ var require_signals = __commonJS({
   }
 });
 
-// node_modules/.pnpm/signal-exit@3.0.7/node_modules/signal-exit/index.js
+// node_modules/signal-exit/index.js
 var require_signal_exit = __commonJS({
-  "node_modules/.pnpm/signal-exit@3.0.7/node_modules/signal-exit/index.js"(exports, module) {
+  "node_modules/signal-exit/index.js"(exports, module) {
     "use strict";
     var process14 = global.process;
     var processOk = function(process15) {
@@ -1663,9 +1663,9 @@ var require_signal_exit = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/cjs/react-reconciler-constants.production.js
+// node_modules/react-reconciler/cjs/react-reconciler-constants.production.js
 var require_react_reconciler_constants_production = __commonJS({
-  "node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/cjs/react-reconciler-constants.production.js"(exports) {
+  "node_modules/react-reconciler/cjs/react-reconciler-constants.production.js"(exports) {
     "use strict";
     exports.ConcurrentRoot = 1;
     exports.ContinuousEventPriority = 8;
@@ -1677,17 +1677,17 @@ var require_react_reconciler_constants_production = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/cjs/react-reconciler-constants.development.js
+// node_modules/react-reconciler/cjs/react-reconciler-constants.development.js
 var require_react_reconciler_constants_development = __commonJS({
-  "node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/cjs/react-reconciler-constants.development.js"(exports) {
+  "node_modules/react-reconciler/cjs/react-reconciler-constants.development.js"(exports) {
     "use strict";
     "production" !== process.env.NODE_ENV && (exports.ConcurrentRoot = 1, exports.ContinuousEventPriority = 8, exports.DefaultEventPriority = 32, exports.DiscreteEventPriority = 2, exports.IdleEventPriority = 268435456, exports.LegacyRoot = 0, exports.NoEventPriority = 0);
   }
 });
 
-// node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/constants.js
+// node_modules/react-reconciler/constants.js
 var require_constants = __commonJS({
-  "node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/constants.js"(exports, module) {
+  "node_modules/react-reconciler/constants.js"(exports, module) {
     "use strict";
     if (process.env.NODE_ENV === "production") {
       module.exports = require_react_reconciler_constants_production();
@@ -1697,9 +1697,9 @@ var require_constants = __commonJS({
   }
 });
 
-// node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js
+// node_modules/scheduler/cjs/scheduler.production.js
 var require_scheduler_production = __commonJS({
-  "node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.production.js"(exports) {
+  "node_modules/scheduler/cjs/scheduler.production.js"(exports) {
     "use strict";
     function push(heap, node) {
       var index = heap.length;
@@ -1970,9 +1970,9 @@ var require_scheduler_production = __commonJS({
   }
 });
 
-// node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.development.js
+// node_modules/scheduler/cjs/scheduler.development.js
 var require_scheduler_development = __commonJS({
-  "node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/cjs/scheduler.development.js"(exports) {
+  "node_modules/scheduler/cjs/scheduler.development.js"(exports) {
     "use strict";
     "production" !== process.env.NODE_ENV && (function() {
       function performWorkUntilDeadline() {
@@ -2229,9 +2229,9 @@ var require_scheduler_development = __commonJS({
   }
 });
 
-// node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js
+// node_modules/scheduler/index.js
 var require_scheduler = __commonJS({
-  "node_modules/.pnpm/scheduler@0.27.0/node_modules/scheduler/index.js"(exports, module) {
+  "node_modules/scheduler/index.js"(exports, module) {
     "use strict";
     if (process.env.NODE_ENV === "production") {
       module.exports = require_scheduler_production();
@@ -2241,9 +2241,9 @@ var require_scheduler = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/cjs/react-reconciler.production.js
+// node_modules/react-reconciler/cjs/react-reconciler.production.js
 var require_react_reconciler_production = __commonJS({
-  "node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/cjs/react-reconciler.production.js"(exports, module) {
+  "node_modules/react-reconciler/cjs/react-reconciler.production.js"(exports, module) {
     "use strict";
     module.exports = function($$$config) {
       function createFiber(tag, pendingProps, key, mode) {
@@ -10420,9 +10420,9 @@ var require_react_reconciler_production = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/cjs/react-reconciler.development.js
+// node_modules/react-reconciler/cjs/react-reconciler.development.js
 var require_react_reconciler_development = __commonJS({
-  "node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/cjs/react-reconciler.development.js"(exports, module) {
+  "node_modules/react-reconciler/cjs/react-reconciler.development.js"(exports, module) {
     "use strict";
     "production" !== process.env.NODE_ENV && (module.exports = function($$$config) {
       function findHook(fiber, id) {
@@ -24193,9 +24193,9 @@ var require_react_reconciler_development = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/index.js
+// node_modules/react-reconciler/index.js
 var require_react_reconciler = __commonJS({
-  "node_modules/.pnpm/react-reconciler@0.33.0_react@19.2.8/node_modules/react-reconciler/index.js"(exports, module) {
+  "node_modules/react-reconciler/index.js"(exports, module) {
     "use strict";
     if (process.env.NODE_ENV === "production") {
       module.exports = require_react_reconciler_production();
@@ -24205,9 +24205,9 @@ var require_react_reconciler = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/constants.js
+// node_modules/ws/lib/constants.js
 var require_constants2 = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/constants.js"(exports, module) {
+  "node_modules/ws/lib/constants.js"(exports, module) {
     "use strict";
     var BINARY_TYPES = ["nodebuffer", "arraybuffer", "fragments"];
     var hasBlob = typeof Blob !== "undefined";
@@ -24228,9 +24228,9 @@ var require_constants2 = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/buffer-util.js
+// node_modules/ws/lib/buffer-util.js
 var require_buffer_util = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/buffer-util.js"(exports, module) {
+  "node_modules/ws/lib/buffer-util.js"(exports, module) {
     "use strict";
     var { EMPTY_BUFFER } = require_constants2();
     var FastBuffer = Buffer[Symbol.species];
@@ -24303,9 +24303,9 @@ var require_buffer_util = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/limiter.js
+// node_modules/ws/lib/limiter.js
 var require_limiter = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/limiter.js"(exports, module) {
+  "node_modules/ws/lib/limiter.js"(exports, module) {
     "use strict";
     var kDone = /* @__PURE__ */ Symbol("kDone");
     var kRun = /* @__PURE__ */ Symbol("kRun");
@@ -24353,9 +24353,9 @@ var require_limiter = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/permessage-deflate.js
+// node_modules/ws/lib/permessage-deflate.js
 var require_permessage_deflate = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/permessage-deflate.js"(exports, module) {
+  "node_modules/ws/lib/permessage-deflate.js"(exports, module) {
     "use strict";
     var zlib = __require("zlib");
     var bufferUtil = require_buffer_util();
@@ -24736,9 +24736,9 @@ var require_permessage_deflate = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/validation.js
+// node_modules/ws/lib/validation.js
 var require_validation = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/validation.js"(exports, module) {
+  "node_modules/ws/lib/validation.js"(exports, module) {
     "use strict";
     var { isUtf8 } = __require("buffer");
     var { hasBlob } = require_constants2();
@@ -24937,9 +24937,9 @@ var require_validation = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/receiver.js
+// node_modules/ws/lib/receiver.js
 var require_receiver = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/receiver.js"(exports, module) {
+  "node_modules/ws/lib/receiver.js"(exports, module) {
     "use strict";
     var { Writable } = __require("stream");
     var PerMessageDeflate2 = require_permessage_deflate();
@@ -25560,9 +25560,9 @@ var require_receiver = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/sender.js
+// node_modules/ws/lib/sender.js
 var require_sender = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/sender.js"(exports, module) {
+  "node_modules/ws/lib/sender.js"(exports, module) {
     "use strict";
     var { Duplex } = __require("stream");
     var { randomFillSync } = __require("crypto");
@@ -26053,9 +26053,9 @@ var require_sender = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/event-target.js
+// node_modules/ws/lib/event-target.js
 var require_event_target = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/event-target.js"(exports, module) {
+  "node_modules/ws/lib/event-target.js"(exports, module) {
     "use strict";
     var { kForOnEventAttribute, kListener } = require_constants2();
     var kCode = /* @__PURE__ */ Symbol("kCode");
@@ -26282,9 +26282,9 @@ var require_event_target = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/extension.js
+// node_modules/ws/lib/extension.js
 var require_extension = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/extension.js"(exports, module) {
+  "node_modules/ws/lib/extension.js"(exports, module) {
     "use strict";
     var { tokenChars } = require_validation();
     function push(dest, name, elem) {
@@ -26435,9 +26435,9 @@ var require_extension = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/websocket.js
+// node_modules/ws/lib/websocket.js
 var require_websocket = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/websocket.js"(exports, module) {
+  "node_modules/ws/lib/websocket.js"(exports, module) {
     "use strict";
     var EventEmitter3 = __require("events");
     var https = __require("https");
@@ -27331,9 +27331,9 @@ var require_websocket = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/stream.js
+// node_modules/ws/lib/stream.js
 var require_stream = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/stream.js"(exports, module) {
+  "node_modules/ws/lib/stream.js"(exports, module) {
     "use strict";
     var WebSocket2 = require_websocket();
     var { Duplex } = __require("stream");
@@ -27429,9 +27429,9 @@ var require_stream = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/subprotocol.js
+// node_modules/ws/lib/subprotocol.js
 var require_subprotocol = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/subprotocol.js"(exports, module) {
+  "node_modules/ws/lib/subprotocol.js"(exports, module) {
     "use strict";
     var { tokenChars } = require_validation();
     function parse(header) {
@@ -27474,9 +27474,9 @@ var require_subprotocol = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/websocket-server.js
+// node_modules/ws/lib/websocket-server.js
 var require_websocket_server = __commonJS({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/lib/websocket-server.js"(exports, module) {
+  "node_modules/ws/lib/websocket-server.js"(exports, module) {
     "use strict";
     var EventEmitter3 = __require("events");
     var http = __require("http");
@@ -27875,10 +27875,10 @@ var require_websocket_server = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ws@8.21.3/node_modules/ws/wrapper.mjs
+// node_modules/ws/wrapper.mjs
 var import_stream, import_extension, import_permessage_deflate, import_receiver, import_sender, import_subprotocol, import_websocket, import_websocket_server, wrapper_default;
 var init_wrapper = __esm({
-  "node_modules/.pnpm/ws@8.21.3/node_modules/ws/wrapper.mjs"() {
+  "node_modules/ws/wrapper.mjs"() {
     "use strict";
     import_stream = __toESM(require_stream(), 1);
     import_extension = __toESM(require_extension(), 1);
@@ -27892,10 +27892,10 @@ var init_wrapper = __esm({
   }
 });
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/devtools-window-polyfill.js
+// node_modules/ink/build/devtools-window-polyfill.js
 var customGlobal;
 var init_devtools_window_polyfill = __esm({
-  "node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/devtools-window-polyfill.js"() {
+  "node_modules/ink/build/devtools-window-polyfill.js"() {
     "use strict";
     init_wrapper();
     customGlobal = globalThis;
@@ -27967,11 +27967,11 @@ var init_react_devtools_core = __esm({
   }
 });
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/devtools.js
+// node_modules/ink/build/devtools.js
 var devtools_exports = {};
 var isDevToolsReachable;
 var init_devtools = __esm({
-  async "node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/devtools.js"() {
+  async "node_modules/ink/build/devtools.js"() {
     "use strict";
     init_devtools_window_polyfill();
     init_wrapper();
@@ -28003,9 +28003,9 @@ var init_devtools = __esm({
   }
 });
 
-// node_modules/.pnpm/mimic-fn@2.1.0/node_modules/mimic-fn/index.js
+// node_modules/mimic-fn/index.js
 var require_mimic_fn = __commonJS({
-  "node_modules/.pnpm/mimic-fn@2.1.0/node_modules/mimic-fn/index.js"(exports, module) {
+  "node_modules/mimic-fn/index.js"(exports, module) {
     "use strict";
     var mimicFn = (to, from) => {
       for (const prop of Reflect.ownKeys(from)) {
@@ -28018,9 +28018,9 @@ var require_mimic_fn = __commonJS({
   }
 });
 
-// node_modules/.pnpm/onetime@5.1.2/node_modules/onetime/index.js
+// node_modules/onetime/index.js
 var require_onetime = __commonJS({
-  "node_modules/.pnpm/onetime@5.1.2/node_modules/onetime/index.js"(exports, module) {
+  "node_modules/onetime/index.js"(exports, module) {
     "use strict";
     var mimicFn = require_mimic_fn();
     var calledFunctions = /* @__PURE__ */ new WeakMap();
@@ -28056,9 +28056,9 @@ var require_onetime = __commonJS({
   }
 });
 
-// node_modules/.pnpm/escape-string-regexp@2.0.0/node_modules/escape-string-regexp/index.js
+// node_modules/escape-string-regexp/index.js
 var require_escape_string_regexp = __commonJS({
-  "node_modules/.pnpm/escape-string-regexp@2.0.0/node_modules/escape-string-regexp/index.js"(exports, module) {
+  "node_modules/escape-string-regexp/index.js"(exports, module) {
     "use strict";
     var matchOperatorsRegex = /[|\\{}()[\]^$+*?.-]/g;
     module.exports = (string) => {
@@ -28070,9 +28070,9 @@ var require_escape_string_regexp = __commonJS({
   }
 });
 
-// node_modules/.pnpm/stack-utils@2.0.6/node_modules/stack-utils/index.js
+// node_modules/stack-utils/index.js
 var require_stack_utils = __commonJS({
-  "node_modules/.pnpm/stack-utils@2.0.6/node_modules/stack-utils/index.js"(exports, module) {
+  "node_modules/stack-utils/index.js"(exports, module) {
     "use strict";
     var escapeStringRegexp = require_escape_string_regexp();
     var cwd2 = typeof process === "object" && process && typeof process.cwd === "function" ? process.cwd() : ".";
@@ -28323,9 +28323,9 @@ var require_stack_utils = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react@19.2.8/node_modules/react/cjs/react-jsx-runtime.production.js
+// node_modules/react/cjs/react-jsx-runtime.production.js
 var require_react_jsx_runtime_production = __commonJS({
-  "node_modules/.pnpm/react@19.2.8/node_modules/react/cjs/react-jsx-runtime.production.js"(exports) {
+  "node_modules/react/cjs/react-jsx-runtime.production.js"(exports) {
     "use strict";
     var REACT_ELEMENT_TYPE = /* @__PURE__ */ Symbol.for("react.transitional.element");
     var REACT_FRAGMENT_TYPE = /* @__PURE__ */ Symbol.for("react.fragment");
@@ -28353,9 +28353,9 @@ var require_react_jsx_runtime_production = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react@19.2.8/node_modules/react/cjs/react-jsx-runtime.development.js
+// node_modules/react/cjs/react-jsx-runtime.development.js
 var require_react_jsx_runtime_development = __commonJS({
-  "node_modules/.pnpm/react@19.2.8/node_modules/react/cjs/react-jsx-runtime.development.js"(exports) {
+  "node_modules/react/cjs/react-jsx-runtime.development.js"(exports) {
     "use strict";
     "production" !== process.env.NODE_ENV && (function() {
       function getComponentNameFromType(type) {
@@ -28610,9 +28610,9 @@ var require_react_jsx_runtime_development = __commonJS({
   }
 });
 
-// node_modules/.pnpm/react@19.2.8/node_modules/react/jsx-runtime.js
+// node_modules/react/jsx-runtime.js
 var require_jsx_runtime = __commonJS({
-  "node_modules/.pnpm/react@19.2.8/node_modules/react/jsx-runtime.js"(exports, module) {
+  "node_modules/react/jsx-runtime.js"(exports, module) {
     "use strict";
     if (process.env.NODE_ENV === "production") {
       module.exports = require_react_jsx_runtime_production();
@@ -28622,15 +28622,15 @@ var require_jsx_runtime = __commonJS({
   }
 });
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/render.js
+// node_modules/ink/build/render.js
 import { Stream } from "stream";
 import process13 from "process";
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/ink.js
+// node_modules/ink/build/ink.js
 var import_react16 = __toESM(require_react(), 1);
 import process12 from "process";
 
-// node_modules/.pnpm/es-toolkit@1.51.0/node_modules/es-toolkit/dist/function/debounce.mjs
+// node_modules/es-toolkit/dist/function/debounce.mjs
 function debounce(func, debounceMs, { signal, edges: edges2 } = {}) {
   let pendingThis = void 0;
   let pendingArgs = null;
@@ -28684,7 +28684,7 @@ function debounce(func, debounceMs, { signal, edges: edges2 } = {}) {
   return debounced;
 }
 
-// node_modules/.pnpm/es-toolkit@1.51.0/node_modules/es-toolkit/dist/compat/function/debounce.mjs
+// node_modules/es-toolkit/dist/compat/function/debounce.mjs
 function debounce2(func, debounceMs = 0, options = {}) {
   if (typeof options !== "object") options = {};
   const { leading = false, trailing = true, maxWait } = options;
@@ -28720,7 +28720,7 @@ function debounce2(func, debounceMs = 0, options = {}) {
   return debounced;
 }
 
-// node_modules/.pnpm/es-toolkit@1.51.0/node_modules/es-toolkit/dist/compat/function/throttle.mjs
+// node_modules/es-toolkit/dist/compat/function/throttle.mjs
 function throttle(func, throttleMs = 0, options = {}) {
   const { leading = true, trailing = true } = options;
   return debounce2(func, throttleMs, {
@@ -28730,7 +28730,7 @@ function throttle(func, throttleMs = 0, options = {}) {
   });
 }
 
-// node_modules/.pnpm/ansi-escapes@7.3.0/node_modules/ansi-escapes/base.js
+// node_modules/ansi-escapes/base.js
 var base_exports = {};
 __export(base_exports, {
   ConEmu: () => ConEmu,
@@ -28774,7 +28774,7 @@ __export(base_exports, {
 import process2 from "process";
 import os from "os";
 
-// node_modules/.pnpm/environment@1.1.0/node_modules/environment/index.js
+// node_modules/environment/index.js
 var isBrowser = globalThis.window?.document !== void 0;
 var isNode = globalThis.process?.versions?.node !== void 0;
 var isBun = globalThis.process?.versions?.bun !== void 0;
@@ -28792,7 +28792,7 @@ var isLinux = platform === "Linux" || globalThis.navigator?.platform?.startsWith
 var isIos = platform === "iOS" || globalThis.navigator?.platform === "MacIntel" && globalThis.navigator?.maxTouchPoints > 1 || /iPad|iPhone|iPod/.test(globalThis.navigator?.platform);
 var isAndroid = platform === "Android" || globalThis.navigator?.platform === "Android" || globalThis.navigator?.userAgent?.includes(" Android ") === true || globalThis.process?.platform === "android";
 
-// node_modules/.pnpm/ansi-escapes@7.3.0/node_modules/ansi-escapes/base.js
+// node_modules/ansi-escapes/base.js
 var ESC = "\x1B[";
 var OSC = "\x1B]";
 var BEL = "\x07";
@@ -28932,13 +28932,13 @@ var ConEmu = {
 };
 var setCwd = (cwd2 = cwdFunction()) => iTerm.setCwd(cwd2) + ConEmu.setCwd(cwd2);
 
-// node_modules/.pnpm/is-in-ci@2.0.0/node_modules/is-in-ci/index.js
+// node_modules/is-in-ci/index.js
 import { env } from "process";
 var check = (key) => key in env && env[key] !== "0" && env[key] !== "false";
 var isInCi = check("CI") || check("CONTINUOUS_INTEGRATION");
 var is_in_ci_default = isInCi;
 
-// node_modules/.pnpm/auto-bind@5.0.1/node_modules/auto-bind/index.js
+// node_modules/auto-bind/index.js
 var getAllProperties = (object) => {
   const properties = /* @__PURE__ */ new Set();
   do {
@@ -28971,10 +28971,10 @@ function autoBind(self, { include, exclude } = {}) {
   return self;
 }
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/ink.js
+// node_modules/ink/build/ink.js
 var import_signal_exit2 = __toESM(require_signal_exit(), 1);
 
-// node_modules/.pnpm/patch-console@2.0.0/node_modules/patch-console/dist/index.js
+// node_modules/patch-console/dist/index.js
 import { PassThrough } from "stream";
 var consoleMethods = [
   "assert",
@@ -29020,10 +29020,10 @@ var patchConsole = (callback) => {
 };
 var dist_default = patchConsole;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/ink.js
+// node_modules/ink/build/ink.js
 var import_constants2 = __toESM(require_constants(), 1);
 
-// node_modules/.pnpm/yoga-layout@3.2.1/node_modules/yoga-layout/dist/binaries/yoga-wasm-base64-esm.js
+// node_modules/yoga-layout/dist/binaries/yoga-wasm-base64-esm.js
 var loadYoga = (() => {
   var _scriptDir = import.meta.url;
   return (function(loadYoga2) {
@@ -30254,7 +30254,7 @@ var loadYoga = (() => {
 })();
 var yoga_wasm_base64_esm_default = loadYoga;
 
-// node_modules/.pnpm/yoga-layout@3.2.1/node_modules/yoga-layout/dist/src/generated/YGEnums.js
+// node_modules/yoga-layout/dist/src/generated/YGEnums.js
 var Align = /* @__PURE__ */ (function(Align2) {
   Align2[Align2["Auto"] = 0] = "Auto";
   Align2[Align2["FlexStart"] = 1] = "FlexStart";
@@ -30457,7 +30457,7 @@ var constants = {
 };
 var YGEnums_default = constants;
 
-// node_modules/.pnpm/yoga-layout@3.2.1/node_modules/yoga-layout/dist/src/wrapAssembly.js
+// node_modules/yoga-layout/dist/src/wrapAssembly.js
 function wrapAssembly(lib) {
   function patch(prototype, name, fn) {
     const original = prototype[name];
@@ -30558,11 +30558,11 @@ function wrapAssembly(lib) {
   };
 }
 
-// node_modules/.pnpm/yoga-layout@3.2.1/node_modules/yoga-layout/dist/src/index.js
+// node_modules/yoga-layout/dist/src/index.js
 var Yoga = wrapAssembly(await yoga_wasm_base64_esm_default());
 var src_default = Yoga;
 
-// node_modules/.pnpm/ansi-regex@6.3.0/node_modules/ansi-regex/index.js
+// node_modules/ansi-regex/index.js
 function ansiRegex({ onlyFirst = false } = {}) {
   const ST = "(?:\\u0007|\\u001B\\u005C|\\u009C)";
   const osc = `(?:\\u001B\\][^\\u0007\\u001B\\u009C]*${ST})`;
@@ -30571,7 +30571,7 @@ function ansiRegex({ onlyFirst = false } = {}) {
   return new RegExp(pattern, onlyFirst ? void 0 : "g");
 }
 
-// node_modules/.pnpm/strip-ansi@7.2.0/node_modules/strip-ansi/index.js
+// node_modules/strip-ansi/index.js
 var regex = ansiRegex();
 function stripAnsi(string) {
   if (typeof string !== "string") {
@@ -30583,7 +30583,7 @@ function stripAnsi(string) {
   return string.replace(regex, "");
 }
 
-// node_modules/.pnpm/get-east-asian-width@1.6.0/node_modules/get-east-asian-width/lookup-data.js
+// node_modules/get-east-asian-width/lookup-data.js
 var ambiguousMinimalCodePoint = 161;
 var ambiguousMaximumCodePoint = 1114109;
 var ambiguousRanges = [161, 161, 164, 164, 167, 168, 170, 170, 173, 174, 176, 180, 182, 186, 188, 191, 198, 198, 208, 208, 215, 216, 222, 225, 230, 230, 232, 234, 236, 237, 240, 240, 242, 243, 247, 250, 252, 252, 254, 254, 257, 257, 273, 273, 275, 275, 283, 283, 294, 295, 299, 299, 305, 307, 312, 312, 319, 322, 324, 324, 328, 331, 333, 333, 338, 339, 358, 359, 363, 363, 462, 462, 464, 464, 466, 466, 468, 468, 470, 470, 472, 472, 474, 474, 476, 476, 593, 593, 609, 609, 708, 708, 711, 711, 713, 715, 717, 717, 720, 720, 728, 731, 733, 733, 735, 735, 768, 879, 913, 929, 931, 937, 945, 961, 963, 969, 1025, 1025, 1040, 1103, 1105, 1105, 8208, 8208, 8211, 8214, 8216, 8217, 8220, 8221, 8224, 8226, 8228, 8231, 8240, 8240, 8242, 8243, 8245, 8245, 8251, 8251, 8254, 8254, 8308, 8308, 8319, 8319, 8321, 8324, 8364, 8364, 8451, 8451, 8453, 8453, 8457, 8457, 8467, 8467, 8470, 8470, 8481, 8482, 8486, 8486, 8491, 8491, 8531, 8532, 8539, 8542, 8544, 8555, 8560, 8569, 8585, 8585, 8592, 8601, 8632, 8633, 8658, 8658, 8660, 8660, 8679, 8679, 8704, 8704, 8706, 8707, 8711, 8712, 8715, 8715, 8719, 8719, 8721, 8721, 8725, 8725, 8730, 8730, 8733, 8736, 8739, 8739, 8741, 8741, 8743, 8748, 8750, 8750, 8756, 8759, 8764, 8765, 8776, 8776, 8780, 8780, 8786, 8786, 8800, 8801, 8804, 8807, 8810, 8811, 8814, 8815, 8834, 8835, 8838, 8839, 8853, 8853, 8857, 8857, 8869, 8869, 8895, 8895, 8978, 8978, 9312, 9449, 9451, 9547, 9552, 9587, 9600, 9615, 9618, 9621, 9632, 9633, 9635, 9641, 9650, 9651, 9654, 9655, 9660, 9661, 9664, 9665, 9670, 9672, 9675, 9675, 9678, 9681, 9698, 9701, 9711, 9711, 9733, 9734, 9737, 9737, 9742, 9743, 9756, 9756, 9758, 9758, 9792, 9792, 9794, 9794, 9824, 9825, 9827, 9829, 9831, 9834, 9836, 9837, 9839, 9839, 9886, 9887, 9919, 9919, 9926, 9933, 9935, 9939, 9941, 9953, 9955, 9955, 9960, 9961, 9963, 9969, 9972, 9972, 9974, 9977, 9979, 9980, 9982, 9983, 10045, 10045, 10102, 10111, 11094, 11097, 12872, 12879, 57344, 63743, 65024, 65039, 65533, 65533, 127232, 127242, 127248, 127277, 127280, 127337, 127344, 127373, 127375, 127376, 127387, 127404, 917760, 917999, 983040, 1048573, 1048576, 1114109];
@@ -30594,7 +30594,7 @@ var wideMinimalCodePoint = 4352;
 var wideMaximumCodePoint = 262141;
 var wideRanges = [4352, 4447, 8986, 8987, 9001, 9002, 9193, 9196, 9200, 9200, 9203, 9203, 9725, 9726, 9748, 9749, 9776, 9783, 9800, 9811, 9855, 9855, 9866, 9871, 9875, 9875, 9889, 9889, 9898, 9899, 9917, 9918, 9924, 9925, 9934, 9934, 9940, 9940, 9962, 9962, 9970, 9971, 9973, 9973, 9978, 9978, 9981, 9981, 9989, 9989, 9994, 9995, 10024, 10024, 10060, 10060, 10062, 10062, 10067, 10069, 10071, 10071, 10133, 10135, 10160, 10160, 10175, 10175, 11035, 11036, 11088, 11088, 11093, 11093, 11904, 11929, 11931, 12019, 12032, 12245, 12272, 12287, 12289, 12350, 12353, 12438, 12441, 12543, 12549, 12591, 12593, 12686, 12688, 12773, 12783, 12830, 12832, 12871, 12880, 42124, 42128, 42182, 43360, 43388, 44032, 55203, 63744, 64255, 65040, 65049, 65072, 65106, 65108, 65126, 65128, 65131, 94176, 94180, 94192, 94198, 94208, 101589, 101631, 101662, 101760, 101874, 110576, 110579, 110581, 110587, 110589, 110590, 110592, 110882, 110898, 110898, 110928, 110930, 110933, 110933, 110948, 110951, 110960, 111355, 119552, 119638, 119648, 119670, 126980, 126980, 127183, 127183, 127374, 127374, 127377, 127386, 127488, 127490, 127504, 127547, 127552, 127560, 127568, 127569, 127584, 127589, 127744, 127776, 127789, 127797, 127799, 127868, 127870, 127891, 127904, 127946, 127951, 127955, 127968, 127984, 127988, 127988, 127992, 128062, 128064, 128064, 128066, 128252, 128255, 128317, 128331, 128334, 128336, 128359, 128378, 128378, 128405, 128406, 128420, 128420, 128507, 128591, 128640, 128709, 128716, 128716, 128720, 128722, 128725, 128728, 128732, 128735, 128747, 128748, 128756, 128764, 128992, 129003, 129008, 129008, 129292, 129338, 129340, 129349, 129351, 129535, 129648, 129660, 129664, 129674, 129678, 129734, 129736, 129736, 129741, 129756, 129759, 129770, 129775, 129784, 131072, 196605, 196608, 262141];
 
-// node_modules/.pnpm/get-east-asian-width@1.6.0/node_modules/get-east-asian-width/utilities.js
+// node_modules/get-east-asian-width/utilities.js
 var isInRange = (ranges, codePoint) => {
   let low = 0;
   let high = Math.floor(ranges.length / 2) - 1;
@@ -30612,7 +30612,7 @@ var isInRange = (ranges, codePoint) => {
   return false;
 };
 
-// node_modules/.pnpm/get-east-asian-width@1.6.0/node_modules/get-east-asian-width/lookup.js
+// node_modules/get-east-asian-width/lookup.js
 var commonCjkCodePoint = 19968;
 var [wideFastPathStart, wideFastPathEnd] = /* @__PURE__ */ findWideFastPathRange(wideRanges);
 function findWideFastPathRange(ranges) {
@@ -30653,7 +30653,7 @@ var isWide = (codePoint) => {
   return isInRange(wideRanges, codePoint);
 };
 
-// node_modules/.pnpm/get-east-asian-width@1.6.0/node_modules/get-east-asian-width/index.js
+// node_modules/get-east-asian-width/index.js
 function validate(codePoint) {
   if (!Number.isSafeInteger(codePoint)) {
     throw new TypeError(`Expected a code point, got \`${typeof codePoint}\`.`);
@@ -30667,7 +30667,7 @@ function eastAsianWidth(codePoint, { ambiguousAsWide = false } = {}) {
   return 1;
 }
 
-// node_modules/.pnpm/string-width@8.2.2/node_modules/string-width/index.js
+// node_modules/string-width/index.js
 var segmenter = new Intl.Segmenter();
 var zeroWidthClusterRegex = new RegExp("^(?:\\p{Default_Ignorable_Code_Point}|\\p{Control}|\\p{Format}|\\p{Nonspacing_Mark}|\\p{Enclosing_Mark}|\\p{Surrogate})+$", "v");
 var leadingNonPrintingRegex = new RegExp("^[\\p{Default_Ignorable_Code_Point}\\p{Control}\\p{Format}\\p{Nonspacing_Mark}\\p{Enclosing_Mark}\\p{Surrogate}]+", "v");
@@ -30793,7 +30793,7 @@ function stringWidth(input, options = {}) {
   return width;
 }
 
-// node_modules/.pnpm/ansi-styles@6.2.3/node_modules/ansi-styles/index.js
+// node_modules/ansi-styles/index.js
 var ANSI_BACKGROUND_OFFSET = 10;
 var wrapAnsi16 = (offset = 0) => (code) => `\x1B[${code + offset}m`;
 var wrapAnsi256 = (offset = 0) => (code) => `\x1B[${38 + offset};5;${code}m`;
@@ -30979,7 +30979,7 @@ function assembleStyles() {
 var ansiStyles = assembleStyles();
 var ansi_styles_default = ansiStyles;
 
-// node_modules/.pnpm/wrap-ansi@10.0.1/node_modules/wrap-ansi/index.js
+// node_modules/wrap-ansi/index.js
 var ANSI_ESCAPE = "\x1B";
 var ANSI_ESCAPE_BELL = "\x07";
 var C1_CSI = "\x9B";
@@ -31458,7 +31458,7 @@ function wrapAnsi(string, columns, options) {
   return String(string).normalize().replaceAll("\r\n", "\n").split("\n").map((line) => exec(expandTabs(line), columns, options)).join("\n");
 }
 
-// node_modules/.pnpm/terminal-size@4.0.1/node_modules/terminal-size/index.js
+// node_modules/terminal-size/index.js
 import process3 from "process";
 import { execFileSync } from "child_process";
 import fs from "fs";
@@ -31564,7 +31564,7 @@ var resize = () => {
   }
 };
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/utils.js
+// node_modules/ink/build/utils.js
 var getWindowSize = (stdout) => {
   const { columns, rows } = stdout;
   if (columns && rows) {
@@ -31577,14 +31577,14 @@ var getWindowSize = (stdout) => {
   };
 };
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/reconciler.js
+// node_modules/ink/build/reconciler.js
 var import_react_reconciler = __toESM(require_react_reconciler(), 1);
 var import_constants = __toESM(require_constants(), 1);
 var Scheduler = __toESM(require_scheduler(), 1);
 import process4 from "process";
 var import_react = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/widest-line@6.0.0/node_modules/widest-line/index.js
+// node_modules/widest-line/index.js
 function widestLine(string) {
   let lineWidth = 0;
   for (const line of string.split("\n")) {
@@ -31593,7 +31593,7 @@ function widestLine(string) {
   return lineWidth;
 }
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/measure-text.js
+// node_modules/ink/build/measure-text.js
 var cache = /* @__PURE__ */ new Map();
 var measureText = (text) => {
   if (text.length === 0) {
@@ -31614,7 +31614,7 @@ var measureText = (text) => {
 };
 var measure_text_default = measureText;
 
-// node_modules/.pnpm/is-fullwidth-code-point@5.1.0/node_modules/is-fullwidth-code-point/index.js
+// node_modules/is-fullwidth-code-point/index.js
 function isFullwidthCodePoint(codePoint) {
   if (!Number.isInteger(codePoint)) {
     return false;
@@ -31622,7 +31622,7 @@ function isFullwidthCodePoint(codePoint) {
   return isFullWidth(codePoint) || isWide(codePoint);
 }
 
-// node_modules/.pnpm/slice-ansi@9.0.0/node_modules/slice-ansi/tokenize-ansi.js
+// node_modules/slice-ansi/tokenize-ansi.js
 var ESCAPE_CODE_POINT = 27;
 var C1_DCS_CODE_POINT = 144;
 var C1_SOS_CODE_POINT = 152;
@@ -32228,7 +32228,7 @@ function tokenizeAnsi(string, { endCharacter = Number.POSITIVE_INFINITY } = {}) 
   return tokens;
 }
 
-// node_modules/.pnpm/slice-ansi@9.0.0/node_modules/slice-ansi/index.js
+// node_modules/slice-ansi/index.js
 function applySgrFragments(activeStyles, fragments) {
   for (const fragment of fragments) {
     switch (fragment.type) {
@@ -32458,7 +32458,7 @@ function sliceAnsi(string, start, end) {
   return returnValue;
 }
 
-// node_modules/.pnpm/cli-truncate@6.1.1/node_modules/cli-truncate/index.js
+// node_modules/cli-truncate/index.js
 var validPositions = /* @__PURE__ */ new Set(["start", "middle", "end"]);
 function getIndexOfNearestSpace(string, wantedIndex, shouldSearchRight) {
   if (string.charAt(wantedIndex) === " ") {
@@ -32600,7 +32600,7 @@ function cliTruncate(text, columns, options = {}) {
   }
 }
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/wrap-text.js
+// node_modules/ink/build/wrap-text.js
 var cache2 = {};
 var wrapText = (text, maxWidth, wrapType) => {
   const cacheKey = text + String(maxWidth) + String(wrapType);
@@ -32637,7 +32637,7 @@ var wrapText = (text, maxWidth, wrapType) => {
 };
 var wrap_text_default = wrapText;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/ansi-tokenizer.js
+// node_modules/ink/build/ansi-tokenizer.js
 var bellCharacter = "\x07";
 var escapeCharacter = "\x1B";
 var stringTerminatorCharacter = "\x9C";
@@ -32944,7 +32944,7 @@ var tokenizeAnsi2 = (text) => {
   return tokens;
 };
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/sanitize-ansi.js
+// node_modules/ink/build/sanitize-ansi.js
 var sgrParametersRegex = /^[\d:;]*$/;
 var sanitizeAnsi = (text) => {
   if (!hasAnsiControlCharacters(text)) {
@@ -32964,7 +32964,7 @@ var sanitizeAnsi = (text) => {
 };
 var sanitize_ansi_default = sanitizeAnsi;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/squash-text-nodes.js
+// node_modules/ink/build/squash-text-nodes.js
 var squashTextNodes = (node) => {
   let text = "";
   for (let index = 0; index < node.childNodes.length; index++) {
@@ -32989,7 +32989,7 @@ var squashTextNodes = (node) => {
 };
 var squash_text_nodes_default = squashTextNodes;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/dom.js
+// node_modules/ink/build/dom.js
 var createNode = (nodeName) => {
   const node = {
     nodeName,
@@ -33113,7 +33113,7 @@ var emitLayoutListeners = (rootNode) => {
   }
 };
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/styles.js
+// node_modules/ink/build/styles.js
 var positionEdges = [
   ["top", src_default.EDGE_TOP],
   ["right", src_default.EDGE_RIGHT],
@@ -33400,7 +33400,7 @@ var styles2 = (node, style = {}, currentStyle = style) => {
 };
 var styles_default = styles2;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/reconciler.js
+// node_modules/ink/build/reconciler.js
 if (process4.env["DEV"] === "true") {
   let isDevtoolsInstalled = false;
   try {
@@ -33687,7 +33687,7 @@ var reconciler_default = (0, import_react_reconciler.default)({
   rendererVersion: packageInfo.version
 });
 
-// node_modules/.pnpm/indent-string@5.0.0/node_modules/indent-string/index.js
+// node_modules/indent-string/index.js
 function indentString(string, count = 1, options = {}) {
   const {
     indent = " ",
@@ -33720,13 +33720,13 @@ function indentString(string, count = 1, options = {}) {
   return string.replace(regex2, indent.repeat(count));
 }
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/get-max-width.js
+// node_modules/ink/build/get-max-width.js
 var getMaxWidth = (yogaNode) => {
   return yogaNode.getComputedWidth() - yogaNode.getComputedPadding(src_default.EDGE_LEFT) - yogaNode.getComputedPadding(src_default.EDGE_RIGHT) - yogaNode.getComputedBorder(src_default.EDGE_LEFT) - yogaNode.getComputedBorder(src_default.EDGE_RIGHT);
 };
 var get_max_width_default = getMaxWidth;
 
-// node_modules/.pnpm/cli-boxes@4.0.1/node_modules/cli-boxes/boxes.json
+// node_modules/cli-boxes/boxes.json
 var boxes_default = {
   single: {
     topLeft: "\u250C",
@@ -33810,10 +33810,10 @@ var boxes_default = {
   }
 };
 
-// node_modules/.pnpm/cli-boxes@4.0.1/node_modules/cli-boxes/index.js
+// node_modules/cli-boxes/index.js
 var cli_boxes_default = boxes_default;
 
-// node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/ansi-styles/index.js
+// node_modules/chalk/source/vendor/ansi-styles/index.js
 var ANSI_BACKGROUND_OFFSET2 = 10;
 var wrapAnsi162 = (offset = 0) => (code) => `\x1B[${code + offset}m`;
 var wrapAnsi2562 = (offset = 0) => (code) => `\x1B[${38 + offset};5;${code}m`;
@@ -33999,7 +33999,7 @@ function assembleStyles2() {
 var ansiStyles2 = assembleStyles2();
 var ansi_styles_default2 = ansiStyles2;
 
-// node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/vendor/supports-color/index.js
+// node_modules/chalk/source/vendor/supports-color/index.js
 import process5 from "process";
 import os2 from "os";
 import tty2 from "tty";
@@ -34131,7 +34131,7 @@ var supportsColor = {
 };
 var supports_color_default = supportsColor;
 
-// node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/utilities.js
+// node_modules/chalk/source/utilities.js
 function stringReplaceAll(string, substring, replacer) {
   let index = string.indexOf(substring);
   if (index === -1) {
@@ -34161,7 +34161,7 @@ function stringEncaseCRLFWithFirstIndex(string, prefix, postfix, index) {
   return returnValue;
 }
 
-// node_modules/.pnpm/chalk@5.6.2/node_modules/chalk/source/index.js
+// node_modules/chalk/source/index.js
 var { stdout: stdoutColor, stderr: stderrColor } = supports_color_default;
 var GENERATOR = /* @__PURE__ */ Symbol("GENERATOR");
 var STYLER = /* @__PURE__ */ Symbol("STYLER");
@@ -34308,7 +34308,7 @@ var chalk = createChalk();
 var chalkStderr = createChalk({ level: stderrColor ? stderrColor.level : 0 });
 var source_default = chalk;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/colorize.js
+// node_modules/ink/build/colorize.js
 var rgbRegex = /^rgb\(\s?(\d+),\s?(\d+),\s?(\d+)\s?\)$/;
 var ansiRegex2 = /^ansi256\(\s?(\d+)\s?\)$/;
 var isNamedColor = (color) => {
@@ -34350,7 +34350,7 @@ var colorize = (str, color, type) => {
 };
 var colorize_default = colorize;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/render-border.js
+// node_modules/ink/build/render-border.js
 var stylePiece = (segment, fg, bg, dim) => {
   let styled = colorize_default(segment, fg, "foreground");
   styled = colorize_default(styled, bg, "background");
@@ -34421,7 +34421,7 @@ var renderBorder = (x, y, node, output) => {
 };
 var render_border_default = renderBorder;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/render-background.js
+// node_modules/ink/build/render-background.js
 var renderBackground = (x, y, node, output) => {
   if (!node.style.backgroundColor) {
     return;
@@ -34444,7 +34444,7 @@ var renderBackground = (x, y, node, output) => {
 };
 var render_background_default = renderBackground;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/render-node-to-output.js
+// node_modules/ink/build/render-node-to-output.js
 var applyPaddingToText = (node, text) => {
   const yogaNode = node.childNodes[0]?.yogaNode;
   if (yogaNode) {
@@ -34552,7 +34552,7 @@ var renderNodeToOutput = (node, output, options) => {
 };
 var render_node_to_output_default = renderNodeToOutput;
 
-// node_modules/.pnpm/@alcalzone+ansi-tokenize@0.3.0/node_modules/@alcalzone/ansi-tokenize/build/consts.js
+// node_modules/@alcalzone/ansi-tokenize/build/consts.js
 var BEL2 = "\x07";
 var ESC2 = "\x1B";
 var BACKSLASH = "\\";
@@ -34576,7 +34576,7 @@ var linkEndCode = `${ESC2}${OSC2}8;;${BEL2}`;
 var linkEndCodeST = `${ESC2}${OSC2}8;;${ESC2}${BACKSLASH}`;
 var linkEndCodeC1ST = `${ESC2}${OSC2}8;;${C1_ST}`;
 
-// node_modules/.pnpm/@alcalzone+ansi-tokenize@0.3.0/node_modules/@alcalzone/ansi-tokenize/build/ansiCodes.js
+// node_modules/@alcalzone/ansi-tokenize/build/ansiCodes.js
 var endCodesSet = /* @__PURE__ */ new Set();
 var endCodesMap = /* @__PURE__ */ new Map();
 for (const [start, end] of ansi_styles_default.codes) {
@@ -34616,7 +34616,7 @@ function isIntensityCode(code) {
   return code.code === ansi_styles_default.bold.open || code.code === ansi_styles_default.dim.open;
 }
 
-// node_modules/.pnpm/@alcalzone+ansi-tokenize@0.3.0/node_modules/@alcalzone/ansi-tokenize/build/reduce.js
+// node_modules/@alcalzone/ansi-tokenize/build/reduce.js
 function reduceAnsiCodes(codes) {
   return reduceAnsiCodesIncremental([], codes);
 }
@@ -34641,7 +34641,7 @@ function reduceAnsiCodesIncremental(codes, newCodes) {
   return ret;
 }
 
-// node_modules/.pnpm/@alcalzone+ansi-tokenize@0.3.0/node_modules/@alcalzone/ansi-tokenize/build/undo.js
+// node_modules/@alcalzone/ansi-tokenize/build/undo.js
 function undoAnsiCodes2(codes) {
   return reduceAnsiCodes(codes).reverse().map((code) => ({
     ...code,
@@ -34649,7 +34649,7 @@ function undoAnsiCodes2(codes) {
   }));
 }
 
-// node_modules/.pnpm/@alcalzone+ansi-tokenize@0.3.0/node_modules/@alcalzone/ansi-tokenize/build/diff.js
+// node_modules/@alcalzone/ansi-tokenize/build/diff.js
 function diffAnsiCodes(from, to) {
   const endCodesInTo = new Set(to.map((code) => code.endCode));
   const startCodesInTo = new Set(to.map((code) => code.code));
@@ -34668,7 +34668,7 @@ function diffAnsiCodes(from, to) {
   ];
 }
 
-// node_modules/.pnpm/@alcalzone+ansi-tokenize@0.3.0/node_modules/@alcalzone/ansi-tokenize/build/styledChars.js
+// node_modules/@alcalzone/ansi-tokenize/build/styledChars.js
 function styledCharsFromTokens(tokens) {
   let codes = [];
   const ret = [];
@@ -34701,7 +34701,7 @@ function styledCharsToString(chars) {
   return ret;
 }
 
-// node_modules/.pnpm/@alcalzone+ansi-tokenize@0.3.0/node_modules/@alcalzone/ansi-tokenize/build/tokenize.js
+// node_modules/@alcalzone/ansi-tokenize/build/tokenize.js
 var segmenter3 = new Intl.Segmenter(void 0, { granularity: "grapheme" });
 function isFullwidthGrapheme(grapheme, baseCodePoint) {
   if (isFullwidthCodePoint(baseCodePoint))
@@ -34850,7 +34850,7 @@ function tokenize(str, endChar = Number.POSITIVE_INFINITY) {
   return ret;
 }
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/output.js
+// node_modules/ink/build/output.js
 var OutputCaches = class {
   widths = /* @__PURE__ */ new Map();
   blockWidths = /* @__PURE__ */ new Map();
@@ -35038,7 +35038,7 @@ var Output = class {
   }
 };
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/renderer.js
+// node_modules/ink/build/renderer.js
 var renderer = (node, isScreenReaderEnabled) => {
   if (node.yogaNode) {
     if (isScreenReaderEnabled) {
@@ -35094,7 +35094,7 @@ var renderer = (node, isScreenReaderEnabled) => {
 };
 var renderer_default = renderer;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/cursor-helpers.js
+// node_modules/ink/build/cursor-helpers.js
 var showCursorEscape = "\x1B[?25h";
 var hideCursorEscape = "\x1B[?25l";
 var cursorPositionChanged = (a, b) => a?.x !== b?.x || a?.y !== b?.y;
@@ -35125,10 +35125,10 @@ var buildReturnToBottomPrefix = (cursorWasShown, previousLineCount, previousCurs
   return hideCursorEscape + buildReturnToBottom(previousLineCount, previousCursorPosition);
 };
 
-// node_modules/.pnpm/cli-cursor@4.0.0/node_modules/cli-cursor/index.js
+// node_modules/cli-cursor/index.js
 import process7 from "process";
 
-// node_modules/.pnpm/restore-cursor@4.0.0/node_modules/restore-cursor/index.js
+// node_modules/restore-cursor/index.js
 var import_onetime = __toESM(require_onetime(), 1);
 var import_signal_exit = __toESM(require_signal_exit(), 1);
 import process6 from "process";
@@ -35139,7 +35139,7 @@ var restoreCursor = (0, import_onetime.default)(() => {
 });
 var restore_cursor_default = restoreCursor;
 
-// node_modules/.pnpm/cli-cursor@4.0.0/node_modules/cli-cursor/index.js
+// node_modules/cli-cursor/index.js
 var isHidden = false;
 var cliCursor = {};
 cliCursor.show = (writableStream = process7.stderr) => {
@@ -35169,7 +35169,7 @@ cliCursor.toggle = (force, writableStream) => {
 };
 var cli_cursor_default = cliCursor;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/log-update.js
+// node_modules/ink/build/log-update.js
 var visibleLineCount = (lines, str) => str.endsWith("\n") ? lines.length - 1 : lines.length;
 var createStandard = (stream, { showCursor = false } = {}) => {
   let previousLineCount = 0;
@@ -35399,23 +35399,23 @@ var create2 = (stream, { showCursor = false, incremental = false } = {}) => {
 var logUpdate = { create: create2 };
 var log_update_default = logUpdate;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/write-synchronized.js
+// node_modules/ink/build/write-synchronized.js
 var bsu = "\x1B[?2026h";
 var esu = "\x1B[?2026l";
 function shouldSynchronize(stream, interactive2) {
   return "isTTY" in stream && stream.isTTY && (interactive2 ?? !is_in_ci_default);
 }
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/instances.js
+// node_modules/ink/build/instances.js
 var instances = /* @__PURE__ */ new WeakMap();
 var instances_default = instances;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/App.js
+// node_modules/ink/build/components/App.js
 var import_react15 = __toESM(require_react(), 1);
 import { EventEmitter as EventEmitter2 } from "events";
 import process11 from "process";
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/input-parser.js
+// node_modules/ink/build/input-parser.js
 var escape = "\x1B";
 var pasteStart = "\x1B[200~";
 var pasteEnd = "\x1B[201~";
@@ -35600,7 +35600,7 @@ var createInputParser = () => {
   };
 };
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/AppContext.js
+// node_modules/ink/build/components/AppContext.js
 var import_react2 = __toESM(require_react(), 1);
 var noopSuspension = {
   async resume() {
@@ -35625,7 +35625,7 @@ var AppContext = (0, import_react2.createContext)(defaultValue);
 AppContext.displayName = "InternalAppContext";
 var AppContext_default = AppContext;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/StdinContext.js
+// node_modules/ink/build/components/StdinContext.js
 var import_react3 = __toESM(require_react(), 1);
 import { EventEmitter } from "events";
 import process8 from "process";
@@ -35644,7 +35644,7 @@ var StdinContext = (0, import_react3.createContext)({
 StdinContext.displayName = "InternalStdinContext";
 var StdinContext_default = StdinContext;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/StdoutContext.js
+// node_modules/ink/build/components/StdoutContext.js
 var import_react4 = __toESM(require_react(), 1);
 import process9 from "process";
 var StdoutContext = (0, import_react4.createContext)({
@@ -35655,7 +35655,7 @@ var StdoutContext = (0, import_react4.createContext)({
 StdoutContext.displayName = "InternalStdoutContext";
 var StdoutContext_default = StdoutContext;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/StderrContext.js
+// node_modules/ink/build/components/StderrContext.js
 var import_react5 = __toESM(require_react(), 1);
 import process10 from "process";
 var StderrContext = (0, import_react5.createContext)({
@@ -35666,7 +35666,7 @@ var StderrContext = (0, import_react5.createContext)({
 StderrContext.displayName = "InternalStderrContext";
 var StderrContext_default = StderrContext;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/FocusContext.js
+// node_modules/ink/build/components/FocusContext.js
 var import_react6 = __toESM(require_react(), 1);
 var FocusContext = (0, import_react6.createContext)({
   activeId: void 0,
@@ -35692,7 +35692,7 @@ var FocusContext = (0, import_react6.createContext)({
 FocusContext.displayName = "InternalFocusContext";
 var FocusContext_default = FocusContext;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/AnimationContext.js
+// node_modules/ink/build/components/AnimationContext.js
 var import_react7 = __toESM(require_react(), 1);
 var animationContext = (0, import_react7.createContext)({
   renderThrottleMs: 0,
@@ -35707,7 +35707,7 @@ var animationContext = (0, import_react7.createContext)({
 animationContext.displayName = "InternalAnimationContext";
 var AnimationContext_default = animationContext;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/CursorContext.js
+// node_modules/ink/build/components/CursorContext.js
 var import_react8 = __toESM(require_react(), 1);
 var CursorContext = (0, import_react8.createContext)({
   setCursorPosition() {
@@ -35716,22 +35716,22 @@ var CursorContext = (0, import_react8.createContext)({
 CursorContext.displayName = "InternalCursorContext";
 var CursorContext_default = CursorContext;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/ErrorBoundary.js
+// node_modules/ink/build/components/ErrorBoundary.js
 var import_react14 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/ErrorOverview.js
+// node_modules/ink/build/components/ErrorOverview.js
 var import_react13 = __toESM(require_react(), 1);
 var import_stack_utils = __toESM(require_stack_utils(), 1);
 import * as fs2 from "fs";
 import { cwd } from "process";
 
-// node_modules/.pnpm/convert-to-spaces@2.0.1/node_modules/convert-to-spaces/dist/index.js
+// node_modules/convert-to-spaces/dist/index.js
 var convertToSpaces = (input, spaces = 2) => {
   return input.replace(/^\t+/gm, ($1) => " ".repeat($1.length * spaces));
 };
 var dist_default2 = convertToSpaces;
 
-// node_modules/.pnpm/code-excerpt@4.0.0/node_modules/code-excerpt/dist/index.js
+// node_modules/code-excerpt/dist/index.js
 var generateLineNumbers = (line, around) => {
   const lineNumbers = [];
   const min = line - around;
@@ -35757,20 +35757,20 @@ var codeExcerpt = (source, line, options = {}) => {
 };
 var dist_default3 = codeExcerpt;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/Box.js
+// node_modules/ink/build/components/Box.js
 var import_react11 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/AccessibilityContext.js
+// node_modules/ink/build/components/AccessibilityContext.js
 var import_react9 = __toESM(require_react(), 1);
 var accessibilityContext = (0, import_react9.createContext)({
   isScreenReaderEnabled: false
 });
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/BackgroundContext.js
+// node_modules/ink/build/components/BackgroundContext.js
 var import_react10 = __toESM(require_react(), 1);
 var backgroundContext = (0, import_react10.createContext)(void 0);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/Box.js
+// node_modules/ink/build/components/Box.js
 var Box = (0, import_react11.forwardRef)(({ children, backgroundColor, "aria-label": ariaLabel, "aria-hidden": ariaHidden, "aria-role": role, "aria-state": ariaState, ...style }, ref) => {
   const { isScreenReaderEnabled } = (0, import_react11.useContext)(accessibilityContext);
   const label = ariaLabel ? import_react11.default.createElement("ink-text", null, ariaLabel) : void 0;
@@ -35798,7 +35798,7 @@ var Box = (0, import_react11.forwardRef)(({ children, backgroundColor, "aria-lab
 Box.displayName = "Box";
 var Box_default = Box;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/Text.js
+// node_modules/ink/build/components/Text.js
 var import_react12 = __toESM(require_react(), 1);
 function Text({ color, backgroundColor, dimColor = false, bold = false, italic = false, underline = false, strikethrough = false, inverse = false, wrap = "wrap", children, "aria-label": ariaLabel, "aria-hidden": ariaHidden = false }) {
   const { isScreenReaderEnabled } = (0, import_react12.useContext)(accessibilityContext);
@@ -35841,7 +35841,7 @@ function Text({ color, backgroundColor, dimColor = false, bold = false, italic =
   return import_react12.default.createElement("ink-text", { style: { flexGrow: 0, flexShrink: 1, flexDirection: "row", textWrap: wrap }, internal_transform: transform }, childrenOrAriaLabel);
 }
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/ErrorOverview.js
+// node_modules/ink/build/components/ErrorOverview.js
 var cleanupPath = (path) => {
   return path?.replace(`file://${cwd()}/`, "");
 };
@@ -35954,7 +35954,7 @@ function ErrorOverview({ error }) {
   );
 }
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/ErrorBoundary.js
+// node_modules/ink/build/components/ErrorBoundary.js
 var ErrorBoundary = class extends import_react14.PureComponent {
   static displayName = "InternalErrorBoundary";
   static getDerivedStateFromError(error) {
@@ -35974,7 +35974,7 @@ var ErrorBoundary = class extends import_react14.PureComponent {
   }
 };
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/App.js
+// node_modules/ink/build/components/App.js
 var tab = "	";
 var shiftTab = "\x1B[Z";
 var escape2 = "\x1B";
@@ -36486,7 +36486,7 @@ function App({ children, stdin, stdout, stderr, writeToStdout, writeToStderr, ex
 App.displayName = "InternalApp";
 var App_default = App;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/kitty-keyboard.js
+// node_modules/ink/build/kitty-keyboard.js
 var kittyFlags = {
   disambiguateEscapeCodes: 1,
   reportEventTypes: 2,
@@ -36512,7 +36512,7 @@ var kittyModifiers = {
   numLock: 128
 };
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/ink.js
+// node_modules/ink/build/ink.js
 var noop = () => {
 };
 var textEncoder = new TextEncoder();
@@ -37308,7 +37308,7 @@ var Ink = class {
   }
 };
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/render.js
+// node_modules/ink/build/render.js
 var render = (node, options) => {
   const inkOptions = {
     stdout: process13.stdout,
@@ -37359,25 +37359,25 @@ var getInstance = (stdout, createInstance) => {
   return instance;
 };
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/render-to-string.js
+// node_modules/ink/build/render-to-string.js
 var import_constants3 = __toESM(require_constants(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/Static.js
+// node_modules/ink/build/components/Static.js
 var import_react17 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/Transform.js
+// node_modules/ink/build/components/Transform.js
 var import_react18 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/Newline.js
+// node_modules/ink/build/components/Newline.js
 var import_react19 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/components/Spacer.js
+// node_modules/ink/build/components/Spacer.js
 var import_react20 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-input.js
+// node_modules/ink/build/hooks/use-input.js
 var import_react22 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/parse-keypress.js
+// node_modules/ink/build/parse-keypress.js
 var textDecoder = new TextDecoder();
 var metaKeyCodeRe = /^(?:\x1b)([a-zA-Z0-9])$/;
 var fnKeyRe = /^(?:\x1b+)(O|N|\[|\[\[)(?:(\d+)(?:;(\d+))?([~^$])|(?:1;)?(\d+)?([a-zA-Z]))/;
@@ -37809,11 +37809,11 @@ var parseKeypress = (s = "") => {
 };
 var parse_keypress_default = parseKeypress;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-stdin.js
+// node_modules/ink/build/hooks/use-stdin.js
 var import_react21 = __toESM(require_react(), 1);
 var useStdinContext = () => (0, import_react21.useContext)(StdinContext_default);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-input.js
+// node_modules/ink/build/hooks/use-input.js
 var useInput = (inputHandler, options = {}) => {
   const { setRawMode, internal_exitOnCtrlC, internal_eventEmitter } = useStdinContext();
   (0, import_react22.useEffect)(() => {
@@ -37893,42 +37893,93 @@ var useInput = (inputHandler, options = {}) => {
 };
 var use_input_default = useInput;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-paste.js
+// node_modules/ink/build/hooks/use-paste.js
 var import_react23 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-app.js
+// node_modules/ink/build/hooks/use-app.js
 var import_react24 = __toESM(require_react(), 1);
 var useApp = () => (0, import_react24.useContext)(AppContext_default);
 var use_app_default = useApp;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-stdout.js
+// node_modules/ink/build/hooks/use-stdout.js
 var import_react25 = __toESM(require_react(), 1);
 var useStdout = () => (0, import_react25.useContext)(StdoutContext_default);
 var use_stdout_default = useStdout;
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-stderr.js
+// node_modules/ink/build/hooks/use-stderr.js
 var import_react26 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-focus.js
+// node_modules/ink/build/hooks/use-focus.js
 var import_react27 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-focus-manager.js
+// node_modules/ink/build/hooks/use-focus-manager.js
 var import_react28 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-is-screen-reader-enabled.js
+// node_modules/ink/build/hooks/use-is-screen-reader-enabled.js
 var import_react29 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-cursor.js
+// node_modules/ink/build/hooks/use-cursor.js
 var import_react30 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-animation.js
+// node_modules/ink/build/hooks/use-animation.js
 var import_react31 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-window-size.js
+// node_modules/ink/build/hooks/use-window-size.js
 var import_react32 = __toESM(require_react(), 1);
 
-// node_modules/.pnpm/ink@7.1.1_@types+react@19.2.18_react@19.2.8/node_modules/ink/build/hooks/use-box-metrics.js
+// node_modules/ink/build/hooks/use-box-metrics.js
 var import_react33 = __toESM(require_react(), 1);
+
+// package.json
+var package_default = {
+  name: "patchpulse-tui",
+  version: "2.2.0",
+  description: "An interactive terminal laboratory for visualizing and comparing pathfinding algorithms.",
+  type: "module",
+  bin: {
+    patchpulse: "dist/cli.js",
+    pathlab: "dist/cli.js"
+  },
+  files: ["dist", "README.md", "README.pt-BR.md", "LICENSE"],
+  engines: { node: ">=22" },
+  scripts: {
+    dev: "tsx src/cli.tsx",
+    build: "tsup",
+    start: "node dist/cli.js",
+    demo: "node dist/cli.js --demo",
+    benchmark: "node dist/cli.js --benchmark",
+    test: "tsx --test test/pathfinding.test.ts",
+    typecheck: "tsc --noEmit",
+    check: "npm test && npm run typecheck && npm run build"
+  },
+  repository: {
+    type: "git",
+    url: "git+https://github.com/miguelconfuso/pathpulse.git"
+  },
+  bugs: {
+    url: "https://github.com/miguelconfuso/pathpulse/issues"
+  },
+  homepage: "https://github.com/miguelconfuso/pathpulse#readme",
+  author: "Miguel (@miguelconfuso)",
+  keywords: ["algorithms", "computer-science", "pathfinding", "visualizer", "bfs", "dfs", "dijkstra", "astar", "greedy", "bidirectional", "terminal", "tui", "ink"],
+  license: "MIT",
+  dependencies: {
+    ink: "^7.1.0",
+    react: "^19.2.7"
+  },
+  devDependencies: {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    tsup: "^8.5.1",
+    tsx: "^4.23.1",
+    typescript: "^7.0.2"
+  },
+  overrides: {
+    tsup: {
+      esbuild: "0.27.2"
+    }
+  }
+};
 
 // src/app.tsx
 var import_react34 = __toESM(require_react(), 1);
@@ -37941,7 +37992,7 @@ var ALGORITHMS = {
   bfs: { name: "BFS", time: "O(V + E)", space: "O(V)", optimal: "fewest steps", description: "expands in even layers; weights are ignored" },
   dfs: { name: "DFS", time: "O(V + E)", space: "O(V)", optimal: "no", description: "dives down one branch before backtracking" },
   dijkstra: { name: "Dijkstra", time: "O((V+E) log V)", space: "O(V)", optimal: "lowest cost", description: "always expands the cheapest known frontier node" },
-  astar: { name: "A*", time: "O(E) \xB7 exponential worst", space: "O(V)", optimal: "admissible h", description: "adds a goal estimate to the accumulated cost" },
+  astar: { name: "A*", time: "O((V+E) log V) worst", space: "O(V)", optimal: "admissible h", description: "adds a goal estimate to the accumulated cost" },
   greedy: { name: "Greedy", time: "O((V+E) log V)", space: "O(V)", optimal: "no", description: "follows only the goal estimate; fast but shortsighted" },
   bidirectional: { name: "Bi-BFS", time: "O(V + E)", space: "O(V)", optimal: "fewest steps", description: "grows BFS waves from both ends until they meet" }
 };
@@ -38058,33 +38109,44 @@ function weighted(options, strategy) {
 function bidirectional(options) {
   const { grid, rows, cols, start, goal, diagonal = false } = options;
   if (start === goal) return { visited: [start], path: [start], cost: 0, maxFrontier: 1, found: true };
-  const queues = [[start], [goal]], heads = [0, 0], seen = [new Uint8Array(grid.length), new Uint8Array(grid.length)];
-  const parents = [new Int32Array(grid.length).fill(-1), new Int32Array(grid.length).fill(-1)], visited = [];
-  seen[0][start] = 1;
-  seen[1][goal] = 1;
-  let side = 0, meeting = -1, maxFrontier = 2;
-  while (heads[0] < queues[0].length && heads[1] < queues[1].length && meeting < 0) {
-    side = queues[0].length - heads[0] <= queues[1].length - heads[1] ? 0 : 1;
-    const current = queues[side][heads[side]];
-    heads[side] = heads[side] + 1;
-    visited.push(current);
-    for (const edge of edges(current, grid, rows, cols, diagonal)) {
-      if (seen[side][edge.index]) continue;
-      seen[side][edge.index] = 1;
-      parents[side][edge.index] = current;
-      queues[side].push(edge.index);
-      if (seen[1 - side][edge.index]) {
-        meeting = edge.index;
-        break;
+  const frontiers = [[start], [goal]];
+  const distances = [new Int32Array(grid.length).fill(-1), new Int32Array(grid.length).fill(-1)];
+  const parents = [new Int32Array(grid.length).fill(-1), new Int32Array(grid.length).fill(-1)];
+  const reported = new Uint8Array(grid.length), visited = [];
+  distances[0][start] = 0;
+  distances[1][goal] = 0;
+  let maxFrontier = 2;
+  while (frontiers[0].length && frontiers[1].length) {
+    const side = frontiers[0].length <= frontiers[1].length ? 0 : 1;
+    const other = 1 - side, next = [];
+    let meeting = -1, bestDistance = Infinity;
+    for (const current of frontiers[side]) {
+      if (!reported[current]) {
+        reported[current] = 1;
+        visited.push(current);
+      }
+      for (const edge of edges(current, grid, rows, cols, diagonal)) {
+        if (distances[side][edge.index] >= 0) continue;
+        distances[side][edge.index] = distances[side][current] + 1;
+        parents[side][edge.index] = current;
+        next.push(edge.index);
+        const otherDistance = distances[other][edge.index];
+        const totalDistance = distances[side][edge.index] + otherDistance;
+        if (otherDistance >= 0 && totalDistance < bestDistance) {
+          bestDistance = totalDistance;
+          meeting = edge.index;
+        }
       }
     }
-    maxFrontier = Math.max(maxFrontier, queues[0].length - heads[0] + queues[1].length - heads[1]);
+    frontiers[side] = next;
+    maxFrontier = Math.max(maxFrontier, frontiers[0].length + frontiers[1].length);
+    if (meeting < 0) continue;
+    const fromStart = pathFrom(parents[0], start, meeting), fromGoal = [meeting];
+    while (fromGoal.at(-1) !== goal) fromGoal.push(parents[1][fromGoal.at(-1)]);
+    const path = [...fromStart, ...fromGoal.slice(1)];
+    return { visited, path, cost: pathCost(path, grid, cols), maxFrontier, found: true };
   }
-  if (meeting < 0) return { visited, path: [], cost: Infinity, maxFrontier, found: false };
-  const fromStart = pathFrom(parents[0], start, meeting), fromGoal = [meeting];
-  while (fromGoal.at(-1) !== goal) fromGoal.push(parents[1][fromGoal.at(-1)]);
-  const path = [...fromStart, ...fromGoal.slice(1)];
-  return { visited, path, cost: pathCost(path, grid, cols), maxFrontier, found: true };
+  return { visited, path: [], cost: Infinity, maxFrontier, found: false };
 }
 function search(options) {
   const { grid, rows, cols, start, goal } = options;
@@ -38594,7 +38656,7 @@ function Gap({ lines = 1 }) {
 // src/cli.tsx
 var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1);
 var args = process.argv.slice(2);
-var VERSION = "2.1.0";
+var VERSION = package_default.version;
 if (args.includes("--help") || args.includes("-h")) {
   console.log(`
   patchpulse \u2014 watch pathfinding algorithms think
