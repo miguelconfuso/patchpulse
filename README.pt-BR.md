@@ -31,8 +31,8 @@ Reproduza a comparação com `npm run benchmark`. Visitar menos nós não signif
 É necessário Node.js 22 ou superior.
 
 ```bash
-git clone https://github.com/miguelconfuso/pathpulse.git
-cd pathpulse
+git clone https://github.com/miguelconfuso/patchpulse.git
+cd patchpulse
 npm ci
 npm run build
 npm start

@@ -5,10 +5,10 @@
   <p><strong>Pathfinding you can actually see.</strong></p>
   <p>Draw the problem. Run six strategies. Understand every decision.</p>
   <p>
-    <a href="https://github.com/miguelconfuso/pathpulse/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/miguelconfuso/pathpulse/ci.yml?branch=main&style=flat-square&label=build" /></a>
+    <a href="https://github.com/miguelconfuso/patchpulse/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/miguelconfuso/patchpulse/ci.yml?branch=main&style=flat-square&label=build" /></a>
     <img alt="Node.js 22+" src="https://img.shields.io/badge/Node.js-22%2B-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
     <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-7-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-    <a href="./LICENSE"><img alt="MIT" src="https://img.shields.io/github/license/miguelconfuso/pathpulse?style=flat-square" /></a>
+    <a href="./LICENSE"><img alt="MIT" src="https://img.shields.io/github/license/miguelconfuso/patchpulse?style=flat-square" /></a>
   </p>
   <p><strong>English</strong> · <a href="./README.pt-BR.md">Português</a></p>
 </div>
@@ -37,8 +37,8 @@ Reproduce the comparison with `npm run benchmark`. Visiting fewer nodes does not
 PatchPulse requires Node.js 22 or newer.
 
 ```bash
-git clone https://github.com/miguelconfuso/pathpulse.git
-cd pathpulse
+git clone https://github.com/miguelconfuso/patchpulse.git
+cd patchpulse
 npm ci
 npm run build
 npm start

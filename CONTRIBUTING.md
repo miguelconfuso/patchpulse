@@ -8,8 +8,8 @@ Thank you for taking the time to improve the project. Small, explainable, and te
 - npm, included with Node.js.
 
 ```bash
-git clone https://github.com/miguelconfuso/pathpulse.git
-cd pathpulse
+git clone https://github.com/miguelconfuso/patchpulse.git
+cd patchpulse
 npm ci
 npm run check
 ```

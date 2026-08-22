@@ -37940,7 +37940,7 @@ var package_default = {
     patchpulse: "dist/cli.js",
     pathlab: "dist/cli.js"
   },
-  files: ["dist", "README.md", "README.pt-BR.md", "LICENSE"],
+  files: ["dist/cli.js", "docs/assets", "README.md", "README.pt-BR.md", "LICENSE"],
   engines: { node: ">=22" },
   scripts: {
     dev: "tsx src/cli.tsx",
@@ -37954,12 +37954,12 @@ var package_default = {
   },
   repository: {
     type: "git",
-    url: "git+https://github.com/miguelconfuso/pathpulse.git"
+    url: "git+https://github.com/miguelconfuso/patchpulse.git"
   },
   bugs: {
-    url: "https://github.com/miguelconfuso/pathpulse/issues"
+    url: "https://github.com/miguelconfuso/patchpulse/issues"
   },
-  homepage: "https://github.com/miguelconfuso/pathpulse#readme",
+  homepage: "https://github.com/miguelconfuso/patchpulse#readme",
   author: "Miguel (@miguelconfuso)",
   keywords: ["algorithms", "computer-science", "pathfinding", "visualizer", "bfs", "dfs", "dijkstra", "astar", "greedy", "bidirectional", "terminal", "tui", "ink"],
   license: "MIT",
