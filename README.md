@@ -8,7 +8,7 @@
 
 PatchPulse started with a question I had while studying graph algorithms: if BFS, Dijkstra and A* can reach the same destination, what is each one doing differently along the way?
 
-I am a 16-year-old student, so I wanted the project to work as both software and a study tool. The grid shows the frontier, visited cells and final path instead of hiding the search behind a finished answer. You can draw obstacles, add weighted cells and run six algorithms under the same conditions.
+I wanted the project to work as both software and a practical way to study search strategies. The grid shows the frontier, visited cells and final path instead of hiding the search behind a finished answer. You can draw obstacles, add weighted cells and run six algorithms under the same conditions.
 
 ## A comparison produced by the program
 

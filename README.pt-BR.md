@@ -67,7 +67,7 @@ Os testes incluem exemplos pequenos e grades aleatórias geradas por sementes fi
 
 ## O que eu aprendi fazendo
 
-Eu tenho 16 anos e este projeto foi uma forma de transformar uma matéria abstrata em algo que eu conseguia manipular. A maior lição foi perceber que visualização também precisa de correção. Se a interface mistura ordem de visita, caminho e custo, ela pode parecer bonita e ainda ensinar a coisa errada.
+Este projeto foi uma forma de transformar um assunto abstrato em algo que eu conseguia manipular. A maior lição foi perceber que visualização também precisa de correção. Se a interface mistura ordem de visita, caminho e custo, ela pode parecer bonita e ainda ensinar a coisa errada.
 
 Também aprendi a criar uma CLI, organizar código TypeScript, escrever testes reproduzíveis e medir resultados em vez de depender somente da impressão visual.
 
