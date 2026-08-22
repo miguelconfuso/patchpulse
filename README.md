@@ -1,7 +1,7 @@
 <div align="center">
   <img src="./docs/assets/patchpulse.png" width="360" alt="PatchPulse" />
   <br />
-  <img src="./docs/assets/patchpulse-path.gif" width="620" alt="O ponto A percorrendo uma linha até o ponto B" />
+  <img src="./docs/assets/patchpulse-path.svg" width="620" alt="O caractere A percorrendo uma linha até o caractere B" />
 </div>
 
 Desenhe paredes, adicione terrenos ponderados e observe seis estratégias explorarem exatamente o mesmo problema, passo a passo. O PatchPulse transforma estruturas de dados, heurísticas e métricas de desempenho em uma experiência visual — sem esconder o algoritmo em uma caixa-preta.

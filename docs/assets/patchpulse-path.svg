@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="64" viewBox="0 0 720 64" role="img" aria-labelledby="title description">
+  <title id="title">PatchPulse: caminho animado de A até B</title>
+  <desc id="description">O caractere A percorre uma linha de pontos até B, desaparece e reinicia.</desc>
+
+  <g font-family="Consolas, 'Liberation Mono', monospace" font-size="22" font-weight="700" dominant-baseline="middle" text-anchor="middle">
+    <text x="60 88 116 144 172 200 228 256 284 312 340 368 396 424 452 480 508 536 564 592 620 648" y="32" fill="#71717a">······················</text>
+
+    <text x="690" y="32" fill="#fb7185">B
+      <animate attributeName="fill" values="#fb7185;#fb7185;#a3e635;#a3e635;#fb7185" keyTimes="0;0.60;0.64;0.78;1" dur="4s" repeatCount="indefinite" />
+    </text>
+
+    <text x="30" y="32" fill="#00b7f0">A
+      <animate attributeName="x" values="30;690;690;30;30" keyTimes="0;0.62;0.78;0.90;1" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="1;1;1;0;0;1" keyTimes="0;0.62;0.70;0.78;0.90;1" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#00b7f0;#00b7f0;#a3e635;#a3e635;#00b7f0" keyTimes="0;0.58;0.64;0.78;1" dur="4s" repeatCount="indefinite" />
+    </text>
+  </g>
+</svg>
