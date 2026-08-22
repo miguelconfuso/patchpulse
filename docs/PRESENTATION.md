@@ -1,8 +1,8 @@
-# Roteiro de apresentação — Pathfinding Lab
+# Roteiro de apresentação — PatchPulse
 
 ## Pitch de 30 segundos
 
-O Pathfinding Lab transforma seis algoritmos de busca em uma experiência observável. O mesmo mapa pode ser editado, reproduzido e medido no terminal, permitindo comparar quantidade de nós visitados, tamanho da rota, custo e memória de fronteira sem tratar o algoritmo como uma caixa-preta.
+O PatchPulse transforma seis algoritmos de busca em uma experiência observável. O mesmo mapa pode ser editado, reproduzido e medido no terminal, permitindo comparar quantidade de nós visitados, tamanho da rota, custo e memória de fronteira sem tratar o algoritmo como uma caixa-preta.
 
 ## Demo de 5 minutos
 

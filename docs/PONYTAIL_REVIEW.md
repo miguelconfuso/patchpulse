@@ -15,5 +15,7 @@ Revisão realizada com as regras do commit `2ed6c52c9d7e5e56942508591085fd45dea2
 - `src/scenarios.ts` (v2.0): cenários foram extraídos somente após existirem dois consumidores reais — TUI e benchmark CLI.
 - `src/app.tsx` (v2.0): resultado inicial do modo demo agora usa inicialização preguiçosa; a busca não é refeita a cada frame da animação.
 - `src/app.tsx` (v2.0): dimensões pequenas recebem um aviso simples, evitando renderização quebrada sem introduzir um segundo layout.
+- Repositório (v2.1): arquivos de contribuição, segurança e automação têm consumidores explícitos no GitHub; nenhum framework documental ou gerador foi adicionado.
+- CLI (v2.1): `patchpulse` virou o nome principal e `pathlab` permaneceu apenas como alias de compatibilidade, compartilhando o mesmo bundle.
 
 Resultado: duas estruturas especulativas removidas, uma extração justificada por uso real, duas otimizações mensuráveis e nenhum finding de segurança ou correção pendente. Lean already. Ship.

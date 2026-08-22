@@ -4,15 +4,16 @@ import { ALGORITHMS, search, type Algorithm } from "./pathfinding.js";
 import { DEFAULT_GOAL, DEFAULT_START, LAB_COLS, LAB_ROWS, SCENARIOS, scenarioGrid } from "./scenarios.js";
 
 const args = process.argv.slice(2);
+const VERSION = "2.1.0";
 if (args.includes("--help") || args.includes("-h")) {
   console.log(`
-  pathlab — watch pathfinding algorithms think
+  patchpulse — watch pathfinding algorithms think
 
   Usage
-    $ pathlab
-    $ pathlab --theme dark
-    $ pathlab --demo --algorithm astar --scenario weighted
-    $ pathlab --benchmark [--json]
+    $ patchpulse
+    $ patchpulse --theme dark
+    $ patchpulse --demo --algorithm astar --scenario weighted
+    $ patchpulse --benchmark [--json]
 
   Options
     --theme <auto|dark|light>  starting palette
@@ -28,15 +29,15 @@ if (args.includes("--help") || args.includes("-h")) {
 `);
   process.exit(0);
 }
-if (args.includes("--version") || args.includes("-v")) { console.log("2.0.0"); process.exit(0); }
+if (args.includes("--version") || args.includes("-v")) { console.log(VERSION); process.exit(0); }
 const option = (name: string) => { const index = args.indexOf(name); return index >= 0 ? args[index + 1] : undefined; };
 const theme = option("--theme"), algorithm = option("--algorithm") ?? "astar", scenario = option("--scenario") ?? "showcase";
 const algorithmNames = Object.keys(ALGORITHMS) as Algorithm[];
 if (args.includes("--theme") && !["auto", "dark", "light"].includes(theme ?? "")) {
-  console.error("pathlab: --theme expects auto, dark, or light"); process.exit(1);
+  console.error("patchpulse: --theme expects auto, dark, or light"); process.exit(1);
 }
-if (!algorithmNames.includes(algorithm as Algorithm)) { console.error(`pathlab: unknown algorithm '${algorithm}'`); process.exit(1); }
-if (!SCENARIOS.includes(scenario as typeof SCENARIOS[number])) { console.error(`pathlab: unknown scenario '${scenario}'`); process.exit(1); }
+if (!algorithmNames.includes(algorithm as Algorithm)) { console.error(`patchpulse: unknown algorithm '${algorithm}'`); process.exit(1); }
+if (!SCENARIOS.includes(scenario as typeof SCENARIOS[number])) { console.error(`patchpulse: unknown scenario '${scenario}'`); process.exit(1); }
 if (args.includes("--benchmark")) {
   const grid = scenarioGrid(scenario as typeof SCENARIOS[number]);
   const report = algorithmNames.map(name => {
@@ -45,7 +46,7 @@ if (args.includes("--benchmark")) {
   });
   if (args.includes("--json")) console.log(JSON.stringify({ scenario, rows: LAB_ROWS, cols: LAB_COLS, results: report }, null, 2));
   else {
-    console.log(`\nPATHLAB BENCHMARK · ${scenario} · ${LAB_COLS}×${LAB_ROWS}\n`);
+    console.log(`\nPATCHPULSE BENCHMARK · ${scenario} · ${LAB_COLS}×${LAB_ROWS}\n`);
     console.log("algorithm   visited   steps   cost    frontier");
     for (const row of report) console.log(`${row.algorithm.padEnd(12)}${String(row.visited).padEnd(10)}${String(row.steps ?? "—").padEnd(8)}${String(row.cost ?? "—").padEnd(8)}${row.maxFrontier}`);
   }

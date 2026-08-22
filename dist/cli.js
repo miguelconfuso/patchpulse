@@ -38287,7 +38287,7 @@ function Lab({ themeMode, initialAlgorithm, initialScenario, autoRun, cycleTheme
   const activeCell = pathStep > 0 ? result?.path[Math.min(pathStep, result.path.length) - 1] : result?.visited[Math.min(step, result.visited.length) - 1];
   const comparisons = (0, import_react34.useMemo)(() => algorithms.map((name) => ({ name, result: search({ algorithm: name, grid, rows: ROWS, cols: COLS, start, goal, diagonal, heuristic: heuristic2 }) })), [diagonal, goal, grid, heuristic2, start]);
   if (columns < 80 || rows < 24) return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(FullScreen, { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Text, { color: theme2.accent, bold: true, children: "PATHLAB NEEDS MORE ROOM" }),
+    /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Text, { color: theme2.accent, bold: true, children: "PATCHPULSE NEEDS MORE ROOM" }),
     /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Text, { color: theme2.gray, children: [
       "minimum 80\xD724  \xB7  current ",
       columns,
@@ -38594,15 +38594,16 @@ function Gap({ lines = 1 }) {
 // src/cli.tsx
 var import_jsx_runtime2 = __toESM(require_jsx_runtime(), 1);
 var args = process.argv.slice(2);
+var VERSION = "2.1.0";
 if (args.includes("--help") || args.includes("-h")) {
   console.log(`
-  pathlab \u2014 watch pathfinding algorithms think
+  patchpulse \u2014 watch pathfinding algorithms think
 
   Usage
-    $ pathlab
-    $ pathlab --theme dark
-    $ pathlab --demo --algorithm astar --scenario weighted
-    $ pathlab --benchmark [--json]
+    $ patchpulse
+    $ patchpulse --theme dark
+    $ patchpulse --demo --algorithm astar --scenario weighted
+    $ patchpulse --benchmark [--json]
 
   Options
     --theme <auto|dark|light>  starting palette
@@ -38619,7 +38620,7 @@ if (args.includes("--help") || args.includes("-h")) {
   process.exit(0);
 }
 if (args.includes("--version") || args.includes("-v")) {
-  console.log("2.0.0");
+  console.log(VERSION);
   process.exit(0);
 }
 var option = (name) => {
@@ -38631,15 +38632,15 @@ var algorithm = option("--algorithm") ?? "astar";
 var scenario = option("--scenario") ?? "showcase";
 var algorithmNames = Object.keys(ALGORITHMS);
 if (args.includes("--theme") && !["auto", "dark", "light"].includes(theme ?? "")) {
-  console.error("pathlab: --theme expects auto, dark, or light");
+  console.error("patchpulse: --theme expects auto, dark, or light");
   process.exit(1);
 }
 if (!algorithmNames.includes(algorithm)) {
-  console.error(`pathlab: unknown algorithm '${algorithm}'`);
+  console.error(`patchpulse: unknown algorithm '${algorithm}'`);
   process.exit(1);
 }
 if (!SCENARIOS.includes(scenario)) {
-  console.error(`pathlab: unknown scenario '${scenario}'`);
+  console.error(`patchpulse: unknown scenario '${scenario}'`);
   process.exit(1);
 }
 if (args.includes("--benchmark")) {
@@ -38651,7 +38652,7 @@ if (args.includes("--benchmark")) {
   if (args.includes("--json")) console.log(JSON.stringify({ scenario, rows: LAB_ROWS, cols: LAB_COLS, results: report }, null, 2));
   else {
     console.log(`
-PATHLAB BENCHMARK \xB7 ${scenario} \xB7 ${LAB_COLS}\xD7${LAB_ROWS}
+PATCHPULSE BENCHMARK \xB7 ${scenario} \xB7 ${LAB_COLS}\xD7${LAB_ROWS}
 `);
     console.log("algorithm   visited   steps   cost    frontier");
     for (const row of report) console.log(`${row.algorithm.padEnd(12)}${String(row.visited).padEnd(10)}${String(row.steps ?? "\u2014").padEnd(8)}${String(row.cost ?? "\u2014").padEnd(8)}${row.maxFrontier}`);

@@ -96,7 +96,7 @@ function Lab({ themeMode, initialAlgorithm, initialScenario, autoRun, cycleTheme
   const comparisons = useMemo(() => algorithms.map(name => ({ name, result: search({ algorithm: name, grid, rows: ROWS, cols: COLS, start, goal, diagonal, heuristic }) })), [diagonal, goal, grid, heuristic, start]);
 
   if (columns < 80 || rows < 24) return <FullScreen>
-    <Text color={theme.accent} bold>PATHLAB NEEDS MORE ROOM</Text>
+    <Text color={theme.accent} bold>PATCHPULSE NEEDS MORE ROOM</Text>
     <Text color={theme.gray}>minimum 80×24  ·  current {columns}×{rows}</Text>
     <Text color={theme.primary}>Resize the terminal to reveal the laboratory.</Text>
     <Gap/>
