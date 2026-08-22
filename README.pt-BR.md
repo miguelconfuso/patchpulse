@@ -1,34 +1,30 @@
 <div align="center">
   <img src="./docs/assets/patchpulse.png" width="360" alt="PatchPulse" />
   <br />
-  <img src="./docs/assets/patchpulse-path.svg" width="620" alt="O caractere A percorrendo uma linha até o caractere B" />
-  <p><strong>Pathfinding que você consegue enxergar.</strong></p>
-  <p>Desenhe o problema. Rode seis estratégias. Entenda cada decisão.</p>
-  <p><a href="./README.md">English</a> · <strong>Português</strong></p>
+  <img src="./docs/assets/patchpulse-path.svg" width="620" alt="Uma busca saindo de A e chegando até B" />
+  <p><strong>Um laboratório de pathfinding feito para rodar no terminal.</strong></p>
+  <p><a href="./README.md">Read in English</a></p>
 </div>
 
----
+Eu comecei o PatchPulse enquanto estudava algoritmos de busca. Ler que o A* usa uma heurística ou que o Dijkstra encontra o menor custo ajudava, mas eu ainda queria enxergar o que cada algoritmo fazia antes de chegar na resposta.
 
-PatchPulse é um laboratório interativo de pathfinding inteiramente no terminal. BFS, DFS, Dijkstra, A*, Greedy Best-First e BFS bidirecional recebem a mesma grade; você acompanha os nós explorados, a fronteira e a rota final sem tratar os algoritmos como caixas-pretas.
+Foi daí que veio a ideia de montar um tabuleiro editável no terminal. Nele eu consigo desenhar paredes, colocar terrenos com peso e acompanhar a fronteira crescendo célula por célula. O programa não mostra apenas o caminho final. Ele mostra o raciocínio da busca.
 
-## A diferença aparece nos números
+## O experimento que melhor explica o projeto
 
-No cenário determinístico `showcase`, A* encontra a mesma rota de custo `26` que Dijkstra visitando cerca de **71% menos nós**.
+No cenário `showcase`, o Dijkstra e o A* encontram uma rota de custo 26. A diferença é que o Dijkstra visita 255 células e o A* visita 75. Nesse caso, a heurística reduz a exploração em aproximadamente 71%.
 
-| Estratégia | Nós visitados | Passos | Custo | Pico da fronteira |
-|---|---:|---:|---:|---:|
-| BFS | 252 | 26 | 26 | 15 |
-| DFS | 49 | 48 | 48 | 49 |
-| Dijkstra | 255 | 26 | 26 | 20 |
-| **A\*** | **75** | **26** | **26** | 47 |
-| Greedy | 30 | 26 | 26 | 36 |
-| Bi-BFS | 237 | 26 | 26 | 28 |
+Isso não significa que visitar menos células sempre produz a melhor resposta. O Greedy visita apenas 30, mas não tem a mesma garantia de caminho ótimo. O DFS visita 49 e encontra uma rota de 48 passos, quase o dobro da rota encontrada por BFS, Dijkstra e A*.
 
-Reproduza a comparação com `npm run benchmark`. Visitar menos nós não significa automaticamente encontrar a rota de menor custo; essa é justamente uma das diferenças que o laboratório torna visível.
+Você pode reproduzir todos os valores:
 
-## Início rápido
+```bash
+npm run benchmark
+```
 
-É necessário Node.js 22 ou superior.
+## Como abrir
+
+O projeto precisa do Node.js 22 ou mais recente.
 
 ```bash
 git clone https://github.com/miguelconfuso/patchpulse.git
@@ -38,63 +34,49 @@ npm run build
 npm start
 ```
 
-No Windows, você também pode abrir `start.cmd`. Depois da publicação no npm, será possível executar sem clonar:
+Depois da instalação local, também dá para registrar o comando no sistema:
 
 ```bash
-npx patchpulse-tui
+npm install -g .
+patchpulse
 ```
 
-## O laboratório
+No Windows, o arquivo `start.cmd` serve como atalho.
 
-- Editor de paredes, terreno ponderado, origem e destino.
-- Execução animada com pausa, passo manual e seis velocidades.
-- Cinco cenários: `showcase`, `weighted`, `open`, `maze` e `random`.
-- Movimentos diagonais seguros, sem atravessar cantos bloqueados.
-- Heurísticas Manhattan, Euclidiana e Chebyshev.
-- Teoria, comparação e métricas dentro da própria TUI.
-- Temas automático, escuro e claro; layout mínimo de 80×24.
+## O que dá para testar
 
-## Algoritmos
+O PatchPulse possui BFS, DFS, Dijkstra, A*, Greedy Best-First e BFS Bidirecional. Existem cenários prontos, mas o mais interessante é alterar o tabuleiro e observar quando o comportamento muda.
 
-| Algoritmo | Tempo no pior caso | O que demonstra |
-|---|---:|---|
-| BFS | `O(V + E)` | Menor número de arestas em grafos sem peso |
-| DFS | `O(V + E)` | Busca profunda sem garantia de otimalidade |
-| Dijkstra | `O((V + E) log V)` | Menor custo com pesos não negativos |
-| A* | `O((V + E) log V)` | Dijkstra guiado por uma heurística admissível |
-| Greedy Best-First | `O((V + E) log V)` | Velocidade guiada ao destino sem garantia ótima |
-| BFS bidirecional | `O(V + E)` | Duas ondas de BFS que se encontram no caminho |
+Algumas possibilidades:
 
-`V` representa as células transitáveis; `E`, as conexões válidas entre vizinhos. Em uma grade, `E = O(V)`.
+* comparar caminho curto com caminho barato usando terrenos de peso 7;
+* ligar o movimento diagonal e trocar entre Manhattan, Euclidiana e Chebyshev;
+* pausar a animação e avançar uma etapa por vez;
+* abrir a tela de comparação para ver custo, células visitadas e maior tamanho da fronteira;
+* gerar um labirinto ou uma grade aleatória.
 
-## CLI
+Os controles principais são `WASD` ou setas para mover, `Space` para desenhar, `Tab` para trocar a ferramenta, números de `1` a `6` para escolher a busca e `Enter` para executar. A tecla `?` mostra o mapa completo dentro do programa.
+
+## Decisões técnicas
+
+Eu separei os algoritmos da interface porque queria que a animação e os testes usassem a mesma implementação. A função `search()`, em `src/pathfinding.ts`, recebe a grade e devolve a ordem de visita, o caminho, o custo e o maior tamanho da fronteira.
+
+As buscas com prioridade usam um min-heap binário. O movimento diagonal não permite atravessar o canto de paredes. Os cenários prontos são determinísticos, então um benchmark pode ser repetido sem mudar os números.
+
+Os testes incluem exemplos pequenos e grades aleatórias geradas por sementes fixas. Nessas grades, A* é comparado com Dijkstra e BFS Bidirecional é comparado com BFS. Isso me ajudou a encontrar situações que eu provavelmente não teria desenhado manualmente.
+
+## O que eu aprendi fazendo
+
+Eu tenho 16 anos e este projeto foi uma forma de transformar uma matéria abstrata em algo que eu conseguia manipular. A maior lição foi perceber que visualização também precisa de correção. Se a interface mistura ordem de visita, caminho e custo, ela pode parecer bonita e ainda ensinar a coisa errada.
+
+Também aprendi a criar uma CLI, organizar código TypeScript, escrever testes reproduzíveis e medir resultados em vez de depender somente da impressão visual.
+
+Para verificar o projeto:
 
 ```bash
-npm run demo
-npm run benchmark
-node dist/cli.js --demo --algorithm astar --scenario weighted
-node dist/cli.js --benchmark --scenario maze --json
+npm test
+npm run typecheck
+npm run build
 ```
 
-Use `node dist/cli.js --help` para ver todas as opções e consulte o [README em inglês](README.md) para o mapa completo de controles, arquitetura e documentação do projeto.
-
-## Verificações de engenharia
-
-```bash
-npm ci
-npm run check
-```
-
-O comando executa exemplos focados e testes de propriedades com seed fixa, verifica os tipos e produz o bundle final. A suíte compara A* com Dijkstra e BFS bidirecional com BFS em 500 grades reproduzíveis. A CI repete a instalação travada e as mesmas verificações em cada push e pull request.
-
-## Documentos do projeto
-
-- [Roteiro de apresentação](docs/PRESENTATION.md)
-- [Processo de release](docs/RELEASING.md)
-- [Histórico de versões](CHANGELOG.md)
-- [Como contribuir](CONTRIBUTING.md)
-- [Política de segurança](SECURITY.md)
-
-## Licença
-
-[MIT](LICENSE) — use, estude e adapte.
+O PatchPulse é distribuído sob a licença [MIT](LICENSE).

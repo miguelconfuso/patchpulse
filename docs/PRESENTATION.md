@@ -1,41 +1,40 @@
-# Roteiro de apresentação — PatchPulse
+# Como eu apresentaria o PatchPulse
 
-## Pitch de 30 segundos
+Eu começaria explicando a dúvida que originou o projeto: dois algoritmos podem encontrar o mesmo caminho e, ainda assim, realizar uma quantidade muito diferente de trabalho.
 
-O PatchPulse transforma seis algoritmos de busca em uma experiência observável. O mesmo mapa pode ser editado, reproduzido e medido no terminal, permitindo comparar quantidade de nós visitados, tamanho da rota, custo e memória de fronteira sem tratar o algoritmo como uma caixa-preta.
+## Demonstração curta
 
-## Demo de 5 minutos
+1. Abra o cenário `showcase` com `npm run demo`.
+2. Mostre a fronteira do A* avançando em direção ao objetivo.
+3. Pressione `V` e compare os seis resultados na mesma grade.
+4. Destaque o Dijkstra com 255 células visitadas e o A* com 75. Os dois chegam ao custo 26.
+5. Abra o cenário `weighted` e compare BFS com Dijkstra. Esse exemplo separa quantidade de passos e custo acumulado.
+6. Pause a execução e avance uma etapa por vez para mostrar que a ordem de exploração também faz parte do resultado.
 
-1. Execute `npm run demo` e apresente a animação do A* no cenário `showcase`.
-2. Pressione `V`: compare os seis algoritmos sobre a mesma entrada.
-3. Pressione `G` até `weighted`, escolha BFS (`1`) e execute. Depois escolha Dijkstra (`3`) e mostre por que passos e custo não são a mesma coisa.
-4. Escolha Greedy (`5`) para explicar `h(n)`, depois A* (`4`) para explicar `f(n) = g(n) + h(n)`.
-5. Escolha Bi-BFS (`6`) no cenário `open` e compare a onda dupla com BFS.
-6. Pressione `H` para fechar com as complexidades.
+## O que vale explicar no código
 
-## Demo sem interação
+O motor de busca não conhece a interface. A função `search()` devolve todos os dados usados pela animação, pelo benchmark e pelos testes.
+
+Dijkstra, A* e Greedy usam um min-heap binário. A reconstrução do caminho percorre os pais uma vez e depois inverte o array, com custo `O(L)`. Nos movimentos diagonais, as duas células laterais são verificadas para impedir que o caminho atravesse uma quina bloqueada.
+
+## Perguntas que eu me prepararia para responder
+
+**Por que o DFS visita poucas células no cenário principal e ainda produz uma rota pior?**
+
+Porque ele aprofunda uma escolha antes de considerar alternativas. A quantidade visitada pode ser pequena sem que o caminho seja curto.
+
+**Por que o Greedy não substitui o A*?**
+
+O Greedy considera apenas a estimativa até o destino. O A* combina essa estimativa com o custo que já foi percorrido.
+
+**Como eu sei que a comparação é confiável?**
+
+Os cenários são determinísticos e todas as estratégias recebem a mesma grade. Os testes também comparam algoritmos que devem concordar sobre o custo ou a quantidade de passos em centenas de grades geradas por sementes fixas.
+
+## Comandos de apoio
 
 ```bash
-node dist/cli.js --demo --algorithm astar --scenario weighted
 node dist/cli.js --benchmark --scenario showcase
-node dist/cli.js --benchmark --scenario weighted --json
+node dist/cli.js --demo --algorithm astar --scenario weighted
+npm test
 ```
-
-## Pontos técnicos
-
-- Núcleo puro e separado da renderização.
-- Heap binário para Dijkstra, A* e Greedy.
-- Reconstrução de caminho em `O(L)`.
-- Heurísticas admissíveis com e sem diagonais.
-- Movimento diagonal impede atravessar o canto de paredes.
-- Bundle portátil e CI com testes, tipos e build.
-
-## Perguntas comuns
-
-**Por que BFS e Dijkstra dão rotas diferentes?** BFS minimiza arestas; Dijkstra minimiza custo acumulado.
-
-**A* sempre é melhor?** Não. A qualidade depende da heurística; no pior caso ele pode se aproximar de Dijkstra.
-
-**Greedy é ótimo?** Não. Ele ignora o custo já pago e pode escolher uma rota cara.
-
-**Por que Bi-BFS ajuda?** Duas buscas de profundidade aproximada `d/2` costumam expandir muito menos estados que uma busca de profundidade `d`.
