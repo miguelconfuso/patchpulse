@@ -6,7 +6,7 @@ export const ALGORITHMS = {
   bfs: { name: "BFS", time: "O(V + E)", space: "O(V)", optimal: "fewest steps", description: "expands in even layers; weights are ignored" },
   dfs: { name: "DFS", time: "O(V + E)", space: "O(V)", optimal: "no", description: "dives down one branch before backtracking" },
   dijkstra: { name: "Dijkstra", time: "O((V+E) log V)", space: "O(V)", optimal: "lowest cost", description: "always expands the cheapest known frontier node" },
-  astar: { name: "A*", time: "O(E) · exponential worst", space: "O(V)", optimal: "admissible h", description: "adds a goal estimate to the accumulated cost" },
+  astar: { name: "A*", time: "O((V+E) log V) worst", space: "O(V)", optimal: "admissible h", description: "adds a goal estimate to the accumulated cost" },
   greedy: { name: "Greedy", time: "O((V+E) log V)", space: "O(V)", optimal: "no", description: "follows only the goal estimate; fast but shortsighted" },
   bidirectional: { name: "Bi-BFS", time: "O(V + E)", space: "O(V)", optimal: "fewest steps", description: "grows BFS waves from both ends until they meet" },
 } as const;
@@ -126,25 +126,46 @@ function weighted(options: SearchOptions, strategy: "dijkstra" | "astar" | "gree
 function bidirectional(options: SearchOptions): SearchResult {
   const { grid, rows, cols, start, goal, diagonal = false } = options;
   if (start === goal) return { visited: [start], path: [start], cost: 0, maxFrontier: 1, found: true };
-  const queues = [[start], [goal]], heads = [0, 0], seen = [new Uint8Array(grid.length), new Uint8Array(grid.length)];
-  const parents = [new Int32Array(grid.length).fill(-1), new Int32Array(grid.length).fill(-1)], visited: number[] = [];
-  seen[0]![start] = 1; seen[1]![goal] = 1;
-  let side = 0, meeting = -1, maxFrontier = 2;
-  while (heads[0]! < queues[0]!.length && heads[1]! < queues[1]!.length && meeting < 0) {
-    side = queues[0]!.length - heads[0]! <= queues[1]!.length - heads[1]! ? 0 : 1;
-    const current = queues[side]![heads[side]!]!; heads[side] = heads[side]! + 1; visited.push(current);
-    for (const edge of edges(current, grid, rows, cols, diagonal)) {
-      if (seen[side]![edge.index]) continue;
-      seen[side]![edge.index] = 1; parents[side]![edge.index] = current; queues[side]!.push(edge.index);
-      if (seen[1 - side]![edge.index]) { meeting = edge.index; break; }
+  const frontiers = [[start], [goal]];
+  const distances = [new Int32Array(grid.length).fill(-1), new Int32Array(grid.length).fill(-1)];
+  const parents = [new Int32Array(grid.length).fill(-1), new Int32Array(grid.length).fill(-1)];
+  const reported = new Uint8Array(grid.length), visited: number[] = [];
+  distances[0]![start] = 0; distances[1]![goal] = 0;
+  let maxFrontier = 2;
+
+  while (frontiers[0]!.length && frontiers[1]!.length) {
+    const side = frontiers[0]!.length <= frontiers[1]!.length ? 0 : 1;
+    const other = 1 - side, next: number[] = [];
+    let meeting = -1, bestDistance = Infinity;
+
+    for (const current of frontiers[side]!) {
+      if (!reported[current]) { reported[current] = 1; visited.push(current); }
+      for (const edge of edges(current, grid, rows, cols, diagonal)) {
+        if (distances[side]![edge.index]! >= 0) continue;
+        distances[side]![edge.index] = distances[side]![current]! + 1;
+        parents[side]![edge.index] = current;
+        next.push(edge.index);
+
+        const otherDistance = distances[other]![edge.index]!;
+        const totalDistance = distances[side]![edge.index]! + otherDistance;
+        if (otherDistance >= 0 && totalDistance < bestDistance) {
+          bestDistance = totalDistance;
+          meeting = edge.index;
+        }
+      }
     }
-    maxFrontier = Math.max(maxFrontier, queues[0]!.length - heads[0]! + queues[1]!.length - heads[1]!);
+
+    frontiers[side] = next;
+    maxFrontier = Math.max(maxFrontier, frontiers[0]!.length + frontiers[1]!.length);
+    if (meeting < 0) continue;
+
+    const fromStart = pathFrom(parents[0]!, start, meeting), fromGoal = [meeting];
+    while (fromGoal.at(-1) !== goal) fromGoal.push(parents[1]![fromGoal.at(-1)!]!);
+    const path = [...fromStart, ...fromGoal.slice(1)];
+    return { visited, path, cost: pathCost(path, grid, cols), maxFrontier, found: true };
   }
-  if (meeting < 0) return { visited, path: [], cost: Infinity, maxFrontier, found: false };
-  const fromStart = pathFrom(parents[0]!, start, meeting), fromGoal = [meeting];
-  while (fromGoal.at(-1) !== goal) fromGoal.push(parents[1]![fromGoal.at(-1)!]!);
-  const path = [...fromStart, ...fromGoal.slice(1)];
-  return { visited, path, cost: pathCost(path, grid, cols), maxFrontier, found: true };
+
+  return { visited, path: [], cost: Infinity, maxFrontier, found: false };
 }
 
 export function search(options: SearchOptions): SearchResult {
