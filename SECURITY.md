@@ -1,13 +1,13 @@
-# Segurança
+# Security
 
-## Versões suportadas
+## Supported versions
 
-A linha `2.x` recebe correções de segurança.
+The `2.x` release line receives security fixes.
 
-## Relatando uma vulnerabilidade
+## Reporting a vulnerability
 
-Não publique detalhes sensíveis em uma issue. Use o recurso **Report a vulnerability** na aba Security do GitHub:
+Do not publish sensitive details in a public issue. Use **Report a vulnerability** in the repository's Security tab:
 
 https://github.com/miguelconfuso/pathpulse/security/advisories/new
 
-Inclua o impacto, os passos mínimos para reprodução e, se possível, uma sugestão de correção. O recebimento será confirmado antes de qualquer divulgação pública.
+Include the impact, minimal reproduction steps, and a suggested fix when possible. Receipt will be acknowledged before any public disclosure.

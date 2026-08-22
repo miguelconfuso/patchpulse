@@ -1,22 +1,22 @@
-name: Ideia
-description: Proponha uma melhoria objetiva para o laboratório
-title: "[Ideia]: "
+name: Feature request
+description: Propose a focused improvement to the laboratory
+title: "[Feature]: "
 labels: [enhancement]
 body:
   - type: textarea
     id: problem
     attributes:
-      label: Qual problema isso resolve?
+      label: What problem would this solve?
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Proposta
-      description: Descreva a menor solução que atenderia ao caso.
+      label: Proposal
+      description: Describe the smallest solution that would address the problem.
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternativas consideradas
+      label: Alternatives considered

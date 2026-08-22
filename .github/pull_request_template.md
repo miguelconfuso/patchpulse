@@ -1,13 +1,13 @@
-## O que mudou
+## What changed
 
-<!-- Explique o problema e a solução em poucas linhas. -->
+<!-- Explain the problem and the solution in a few lines. -->
 
-## Como foi verificado
+## How it was verified
 
 - [ ] `npm run check`
-- [ ] Teste manual da TUI, quando aplicável
-- [ ] Documentação atualizada, quando aplicável
+- [ ] Manual TUI test, when applicable
+- [ ] Documentation updated, when applicable
 
-## Evidências
+## Evidence
 
-<!-- Inclua métricas, saída do terminal ou imagem para mudanças visuais. -->
+<!-- Include metrics, terminal output, or screenshots for visual changes. -->

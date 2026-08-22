@@ -1,142 +1,149 @@
 <div align="center">
   <img src="./docs/assets/patchpulse.png" width="360" alt="PatchPulse" />
   <br />
-  <img src="./docs/assets/patchpulse-path.svg" width="620" alt="O caractere A percorrendo uma linha até o caractere B" />
-  <p><strong>Pathfinding que você consegue enxergar.</strong></p>
-  <p>Desenhe o problema. Rode seis estratégias. Entenda cada decisão.</p>
+  <img src="./docs/assets/patchpulse-path.svg" width="620" alt="The A character travelling along a path to B" />
+  <p><strong>Pathfinding you can actually see.</strong></p>
+  <p>Draw the problem. Run six strategies. Understand every decision.</p>
   <p>
     <a href="https://github.com/miguelconfuso/pathpulse/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/miguelconfuso/pathpulse/ci.yml?branch=main&style=flat-square&label=build" /></a>
     <img alt="Node.js 22+" src="https://img.shields.io/badge/Node.js-22%2B-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
     <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-7-3178C6?style=flat-square&logo=typescript&logoColor=white" />
     <a href="./LICENSE"><img alt="MIT" src="https://img.shields.io/github/license/miguelconfuso/pathpulse?style=flat-square" /></a>
   </p>
+  <p><strong>English</strong> · <a href="./README.pt-BR.md">Português</a></p>
 </div>
 
 ---
 
-PatchPulse é um laboratório de pathfinding inteiramente no terminal. BFS, DFS, Dijkstra, A*, Greedy Best-First e BFS bidirecional recebem a mesma grade; você acompanha a exploração, a fronteira e a rota final sem tratar o algoritmo como uma caixa-preta.
+PatchPulse is an interactive pathfinding laboratory that runs entirely in the terminal. BFS, DFS, Dijkstra, A*, Greedy Best-First, and Bidirectional BFS solve the same grid while you observe the explored nodes, frontier, and final route—without treating the algorithms as black boxes.
 
-## A diferença aparece nos números
+## The difference shows up in the numbers
 
-No cenário determinístico `showcase`, A* encontra a mesma rota de custo `26` que Dijkstra visitando cerca de **71% menos nós**.
+On the deterministic `showcase` scenario, A* finds the same cost-`26` route as Dijkstra while visiting roughly **71% fewer nodes**.
 
-| Estratégia | Nós visitados | Passos | Custo | Pico da fronteira |
+| Strategy | Visited nodes | Steps | Cost | Peak frontier |
 |---|---:|---:|---:|---:|
 | BFS | 252 | 26 | 26 | 15 |
 | DFS | 49 | 48 | 48 | 49 |
 | Dijkstra | 255 | 26 | 26 | 20 |
 | **A\*** | **75** | **26** | **26** | 47 |
 | Greedy | 30 | 26 | 26 | 36 |
-| Bi-BFS | 232 | 26 | 26 | 30 |
+| Bi-BFS | 237 | 26 | 26 | 28 |
 
-Reproduza localmente com `npm run benchmark`. Menos nós visitados não significa automaticamente menor custo; essa é justamente uma das comparações que o laboratório torna visível.
+Reproduce the comparison with `npm run benchmark`. Visiting fewer nodes does not automatically mean finding the lowest-cost path—that distinction is one of the ideas the laboratory makes visible.
 
-## Comece em segundos
+## Quick start
 
-É necessário Node.js 22 ou superior. O bundle versionado já inclui as dependências da interface.
+PatchPulse requires Node.js 22 or newer.
 
 ```bash
 git clone https://github.com/miguelconfuso/pathpulse.git
 cd pathpulse
+npm ci
+npm run build
 npm start
 ```
 
-No Windows, você também pode abrir `start.cmd` diretamente.
+On Windows, you can also open `start.cmd` after cloning the repository. Once the npm package is released, run it without cloning:
 
-## O laboratório
+```bash
+npx patchpulse-tui
+```
 
-- Editor de paredes, terreno ponderado, origem e destino.
-- Execução animada com pausa, passo manual e seis velocidades.
-- Cinco cenários reproduzíveis: `showcase`, `weighted`, `open`, `maze` e `random`.
-- Movimentos diagonais seguros, sem atravessar cantos bloqueados.
-- Heurísticas Manhattan, Euclidiana e Chebyshev.
-- Comparação, teoria e métricas dentro da própria TUI.
-- Temas automático, escuro e claro; layout mínimo de 80×24.
+## What is inside
 
-## Algoritmos
+- A grid editor for walls, weighted terrain, start, and goal cells.
+- Animated execution with pause, single-step mode, and six speeds.
+- Five scenarios: `showcase`, `weighted`, `open`, `maze`, and `random`.
+- Safe diagonal movement that cannot cut through blocked corners.
+- Manhattan, Euclidean, and Chebyshev heuristics.
+- In-app theory, side-by-side comparison, and search metrics.
+- Automatic, dark, and light themes with an 80×24 minimum layout.
 
-| Algoritmo | Complexidade | O que demonstra |
+## Algorithms
+
+| Algorithm | Worst-case time | What it demonstrates |
 |---|---:|---|
-| BFS | `O(V + E)` | Menor número de passos em arestas uniformes |
-| DFS | `O(V + E)` | Busca profunda; encontra rotas sem garantir a melhor |
-| Dijkstra | `O((V + E) log V)` | Menor custo com pesos não negativos |
-| A* | Exponencial no pior caso | Dijkstra orientado por uma heurística admissível |
-| Greedy Best-First | `O((V + E) log V)` | Velocidade guiada somente por `h(n)`, sem garantia ótima |
-| BFS bidirecional | `O(V + E)` | Duas ondas de BFS que se encontram no meio |
+| BFS | `O(V + E)` | Fewest edges on an unweighted graph |
+| DFS | `O(V + E)` | Deep exploration without an optimality guarantee |
+| Dijkstra | `O((V + E) log V)` | Lowest cost with non-negative weights |
+| A* | `O((V + E) log V)` | Dijkstra guided by an admissible heuristic |
+| Greedy Best-First | `O((V + E) log V)` | Goal-directed speed without an optimality guarantee |
+| Bidirectional BFS | `O(V + E)` | Two BFS waves meeting between start and goal |
 
-`V` representa as células transitáveis; `E`, as conexões válidas entre vizinhos.
+`V` is the number of traversable cells and `E` is the number of valid neighbour connections. On a grid, `E = O(V)`.
 
 ## CLI
 
 ```bash
-# Demonstração automática
+# Automatic demonstration
 npm run demo
 
-# Comparação reproduzível
+# Reproducible comparison
 npm run benchmark
 
-# Cenário e estratégia específicos
+# Specific algorithm and scenario
 node dist/cli.js --demo --algorithm astar --scenario weighted
 
-# Saída adequada para scripts e gráficos
+# Machine-readable benchmark output
 node dist/cli.js --benchmark --scenario maze --json
 ```
 
-Use `node dist/cli.js --help` para ver todas as opções.
+Run `node dist/cli.js --help` for every option.
 
 <details>
-<summary><strong>Mapa de controles</strong></summary>
+<summary><strong>Keyboard map</strong></summary>
 
-| Tecla | Ação |
+| Key | Action |
 |---|---|
-| Setas ou `WASD` | Move o cursor |
-| `Espaço` / `Z` | Pinta uma célula / alterna desenho contínuo |
-| `Tab` | Alterna parede, peso, borracha, origem e destino |
-| `1`–`6` | Seleciona o algoritmo |
-| `Enter` | Inicia a animação |
-| `P` / `N` / `R` | Pausa, avança um passo ou reinicia |
-| `G` / `M` / `X` / `C` | Alterna cenário, labirinto, aleatório ou campo aberto |
-| `I` / `U` | Alterna diagonais ou heurística |
-| `+` / `-` | Ajusta a velocidade |
-| `H` / `V` / `?` | Abre teoria, comparação ou ajuda |
-| `T` / `Q` | Alterna tema ou sai |
+| Arrows or `WASD` | Move the cursor |
+| `Space` / `Z` | Paint a cell / toggle continuous drawing |
+| `Tab` | Cycle wall, weight, eraser, start, and goal tools |
+| `1`–`6` | Select an algorithm |
+| `Enter` | Start the animation |
+| `P` / `N` / `R` | Pause, advance one step, or reset |
+| `G` / `M` / `X` / `C` | Cycle scenario, maze, random, or open grid |
+| `I` / `U` | Toggle diagonals or cycle the heuristic |
+| `+` / `-` | Change animation speed |
+| `H` / `V` / `?` | Open theory, comparison, or help |
+| `T` / `Q` | Cycle the theme or quit |
 
 </details>
 
-## Arquitetura
+## Architecture
 
 ```text
 src/
-├── pathfinding.ts   algoritmos puros, heap e geração de mapas
-├── scenarios.ts     cenários determinísticos compartilhados
-├── app.tsx          estado, animação e interface Ink
-└── cli.tsx          argumentos, benchmark e ciclo do terminal
+├── pathfinding.ts   pure algorithms, binary heap, and grid generation
+├── scenarios.ts     deterministic scenarios shared by the app and CLI
+├── app.tsx          Ink interface, state, and animation
+└── cli.tsx          arguments, benchmark, and terminal lifecycle
 ```
 
-O núcleo não conhece a interface. A mesma função `search()` alimenta a animação, o benchmark e os testes, reduzindo duplicação e mantendo as comparações honestas.
+The search engine does not depend on the interface. The same `search()` function powers the visualization, benchmark, and tests, keeping each comparison consistent.
 
-## Desenvolvimento
+## Engineering checks
 
 ```bash
-npm install
-npm run dev
+npm ci
 npm run check
 ```
 
-`npm run check` executa os testes determinísticos, verifica os tipos e produz o bundle final. A integração contínua repete o mesmo fluxo em cada push e pull request.
+`npm run check` runs focused examples and seeded property tests, checks TypeScript, and creates the production bundle. The property suite compares A* with Dijkstra and Bidirectional BFS with BFS across 500 reproducible grids. CI repeats the same locked installation and verification on every push and pull request.
 
-## Projeto
+## Project documents
 
-- [Roteiro de apresentação](docs/PRESENTATION.md)
-- [Histórico de versões](CHANGELOG.md)
-- [Como contribuir](CONTRIBUTING.md)
-- [Política de segurança](SECURITY.md)
-- [Revisão de simplicidade](docs/PONYTAIL_REVIEW.md)
+- [Presentation guide](docs/PRESENTATION.md)
+- [Release process](docs/RELEASING.md)
+- [Changelog](CHANGELOG.md)
+- [Contributing guide](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
+- [Simplicity review](docs/PONYTAIL_REVIEW.md)
 
-## Créditos
+## Credits
 
-A linguagem visual foi inspirada no [Yoinks](https://github.com/pablostanley/yoinks), de Pablo Stanley. A revisão de simplicidade segue princípios do [Ponytail](https://github.com/DietrichGebert/ponytail). Nenhuma marca, componente ou implementação desses projetos foi copiada.
+The visual language was inspired by [Yoinks](https://github.com/pablostanley/yoinks), by Pablo Stanley. The simplicity review follows ideas from [Ponytail](https://github.com/DietrichGebert/ponytail). No brand, component, or implementation from either project was copied.
 
-## Licença
+## License
 
-[MIT](LICENSE) — use, estude e adapte.
+[MIT](LICENSE) — use it, study it, and adapt it.

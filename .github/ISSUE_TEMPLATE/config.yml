@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Relatar vulnerabilidade
+  - name: Report a vulnerability
     url: https://github.com/miguelconfuso/pathpulse/security/advisories/new
-    about: Use o canal privado para problemas de segurança.
+    about: Use the private channel for security issues.

@@ -1,34 +1,34 @@
 name: Bug
-description: Relate um comportamento incorreto ou uma regressão
+description: Report incorrect behaviour or a regression
 title: "[Bug]: "
 labels: [bug]
 body:
   - type: markdown
     attributes:
-      value: Obrigado por ajudar a melhorar o PatchPulse.
+      value: Thank you for helping improve PatchPulse.
   - type: textarea
     id: description
     attributes:
-      label: O que aconteceu?
-      description: Explique o comportamento observado e o esperado.
+      label: What happened?
+      description: Explain the observed and expected behaviour.
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
-      label: Como reproduzir?
-      placeholder: Inclua comandos, cenário, algoritmo e teclas utilizadas.
+      label: How can we reproduce it?
+      placeholder: Include commands, scenario, algorithm, and keys used.
     validations:
       required: true
   - type: input
     id: environment
     attributes:
-      label: Ambiente
+      label: Environment
       placeholder: Windows 10, Node.js 22, terminal 100×30
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Evidências adicionais
-      description: Cole logs ou arraste imagens aqui. Não inclua informações sensíveis.
+      label: Additional evidence
+      description: Paste logs or attach screenshots. Do not include sensitive information.

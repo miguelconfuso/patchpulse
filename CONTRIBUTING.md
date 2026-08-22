@@ -1,29 +1,29 @@
-# Contribuindo com o PatchPulse
+# Contributing to PatchPulse
 
-Obrigado por dedicar tempo ao projeto. Mudanças pequenas, explicáveis e testadas são as mais fáceis de revisar.
+Thank you for taking the time to improve the project. Small, explainable, and tested changes are the easiest to review.
 
-## Ambiente
+## Development environment
 
-- Node.js 22 ou superior.
-- npm incluído na instalação do Node.js.
+- Node.js 22 or newer.
+- npm, included with Node.js.
 
 ```bash
 git clone https://github.com/miguelconfuso/pathpulse.git
 cd pathpulse
-npm install
+npm ci
 npm run check
 ```
 
-## Fluxo
+## Workflow
 
-1. Abra uma issue para mudanças de comportamento relevantes.
-2. Crie uma branch curta a partir de `main`.
-3. Faça uma alteração por pull request.
-4. Adicione ou atualize testes quando o comportamento mudar.
-5. Execute `npm run check` antes de enviar.
+1. Open an issue for significant behavioural changes.
+2. Create a focused branch from `main`.
+3. Keep each pull request centred on one change.
+4. Add or update tests whenever behaviour changes.
+5. Run `npm run check` before submitting.
 
-Mudanças em algoritmos devem explicar a garantia esperada e incluir um caso determinístico. Mudanças visuais devem continuar utilizáveis em terminais de 80×24.
+Algorithm changes must explain the expected guarantee and include a deterministic case. Visual changes must remain usable in an 80×24 terminal.
 
 ## Pull requests
 
-Descreva o problema, a solução e como a alteração foi verificada. Imagens ajudam em mudanças visuais; números reproduzíveis ajudam em mudanças de desempenho.
+Describe the problem, the solution, and how the change was verified. Screenshots help with visual work; reproducible numbers help with performance work.
