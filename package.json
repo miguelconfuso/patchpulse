@@ -1,0 +1,31 @@
+{
+  "name": "pathfinding-lab-tui",
+  "version": "2.0.0",
+  "description": "Laboratório interativo de seis algoritmos de pathfinding para o terminal.",
+  "type": "module",
+  "bin": { "pathlab": "dist/cli.js" },
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "tsx src/cli.tsx",
+    "build": "tsup",
+    "start": "node dist/cli.js",
+    "demo": "node dist/cli.js --demo",
+    "benchmark": "node dist/cli.js --benchmark",
+    "test": "tsx --test test/pathfinding.test.ts",
+    "typecheck": "tsc --noEmit",
+    "check": "npm test && npm run typecheck && npm run build"
+  },
+  "keywords": ["pathfinding", "bfs", "dfs", "dijkstra", "astar", "greedy", "bidirectional", "terminal", "tui", "ink"],
+  "license": "MIT",
+  "dependencies": {
+    "ink": "^7.1.0",
+    "react": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
+  }
+}
