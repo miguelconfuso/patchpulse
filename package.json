@@ -1,13 +1,13 @@
 {
   "name": "patchpulse-tui",
-  "version": "2.1.0",
-  "description": "Visualize seis algoritmos de pathfinding em tempo real, diretamente no terminal.",
+  "version": "2.2.0",
+  "description": "An interactive terminal laboratory for visualizing and comparing pathfinding algorithms.",
   "type": "module",
   "bin": {
     "patchpulse": "dist/cli.js",
     "pathlab": "dist/cli.js"
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": ["dist/cli.js", "docs/assets", "README.md", "README.pt-BR.md", "LICENSE"],
   "engines": { "node": ">=22" },
   "scripts": {
     "dev": "tsx src/cli.tsx",
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/miguelconfuso/pathpulse#readme",
   "author": "Miguel (@miguelconfuso)",
-  "keywords": ["algorithms", "pathfinding", "visualizer", "bfs", "dfs", "dijkstra", "astar", "greedy", "bidirectional", "terminal", "tui", "ink"],
+  "keywords": ["algorithms", "computer-science", "pathfinding", "visualizer", "bfs", "dfs", "dijkstra", "astar", "greedy", "bidirectional", "terminal", "tui", "ink"],
   "license": "MIT",
   "dependencies": {
     "ink": "^7.1.0",
@@ -40,5 +40,10 @@
     "tsup": "^8.5.1",
     "tsx": "^4.23.1",
     "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "tsup": {
+      "esbuild": "0.27.2"
+    }
   }
 }

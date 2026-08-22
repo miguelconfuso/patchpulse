@@ -1,10 +1,11 @@
 import { render } from "ink";
+import packageJson from "../package.json" with { type: "json" };
 import { App } from "./app.js";
 import { ALGORITHMS, search, type Algorithm } from "./pathfinding.js";
 import { DEFAULT_GOAL, DEFAULT_START, LAB_COLS, LAB_ROWS, SCENARIOS, scenarioGrid } from "./scenarios.js";
 
 const args = process.argv.slice(2);
-const VERSION = "2.1.0";
+const VERSION = packageJson.version;
 if (args.includes("--help") || args.includes("-h")) {
   console.log(`
   patchpulse — watch pathfinding algorithms think
